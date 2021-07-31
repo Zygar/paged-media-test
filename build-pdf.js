@@ -1,7 +1,7 @@
 const path = require(`path`)
 const { exec } = require("child_process");
 const currentDir = process.cwd();
-const targetFile = `${currentDir}/public/chapters/chapter-1/print/index.html`;
+const targetFile = `http://localhost:8069/chapters/chapter-1/print/`;
 const outputDir = `${currentDir}/public/chapters/chapter-1.pdf`;
 
 exec(`pagedjs-cli '${targetFile}' -o '${outputDir}'`, (error, stdout, stderr) => {
