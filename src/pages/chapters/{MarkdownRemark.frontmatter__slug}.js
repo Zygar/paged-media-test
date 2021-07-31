@@ -10,6 +10,7 @@ export default function Template({
         <div className="blog-post-container">
             <div className="blog-post">
                 <Link to="/">Go home</Link>
+                <Link to={`/chapters/${frontmatter.slug}.pdf`} >Download</Link>
                 <h1>{frontmatter.title}</h1>
                 <p>{frontmatter.author}</p>
                 <div
