@@ -1,16 +1,8 @@
 import Typography from "typography"
+import theme from 'typography-theme-lincoln'
 
-const typography = new Typography({
-    baseFontSize: "18px",
-    baseLineHeight: 1.666,
-    headerFontFamily: [
-        "Helvetica Neue",
-        "Segoe UI",
-        "Helvetica",
-        "Arial",
-        "sans-serif",
-    ],
-    bodyFontFamily: ["Georgia", "serif"],
-})
+const typography = new Typography(
+    theme
+)
 
 export default typography
