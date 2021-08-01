@@ -1,6 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { Link } from "gatsby"
+import { Previewer } from "pagedjs";
+import chapterRenderer from "../chapterRenderer";
 import "./print.css"
 
 export default function Template({
@@ -9,7 +11,7 @@ export default function Template({
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
   return (
-    <div className="blog-post-container">
+    <div className="page-wrapper">
       <div className="blog-post">
         <Link to="/">Go home</Link>
         <h1>{frontmatter.title}</h1>
