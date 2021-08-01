@@ -21,8 +21,7 @@ const typography = new Typography(
                 },
                 "@media only print": {
                     html: {
-                        fontSize: "12pt",
-
+                        fontSize: "11pt"
                     }
                 }
             }

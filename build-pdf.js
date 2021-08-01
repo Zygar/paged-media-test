@@ -3,7 +3,7 @@ const { exec } = require("child_process");
 const currentDir = process.cwd();
 const targetDir = `http://localhost:8069/chapters/chapter-1/print/`;
 const outputDir = `${currentDir}/public/chapters/`;
-const chapters = ['chapter-1', 'chapter-2', 'chapter-3']
+// const chapters = ['chapter-1', 'chapter-2', 'chapter-3']
 
 const genChapters = function (chapters) {
     for (const index in chapters) {
@@ -26,4 +26,11 @@ const genPdf = function (chapter) {
     })
 }
 
-genChapters(chapters);
+module.exports = {
+    genChapters,
+    genPdf
+}
+
+// genChapters(chapters);
+
+// export default genChapters;

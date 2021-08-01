@@ -12,7 +12,7 @@
         "serve": "gatsby serve",
         "clean": "gatsby clean",
         "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-        "buildpdf": "node build-pdf.js"
+        "buildpdf": "node -e 'require(\"./build-pdf.js\").genChapters(require(\"./src/chapters/chapter-list.json\").allSlugs)'"
     },
     "dependencies": {
         "gatsby": "^3.10.2",
