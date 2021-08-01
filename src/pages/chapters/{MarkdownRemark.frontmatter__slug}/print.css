@@ -23,16 +23,11 @@
     }
 }
 
+.post {
+    column-count: 2
+}
+
 @media print {
-    .page-wrapper {
-        column-count: 2;
-        column-fill: auto;
-    }
-    .page-wrapper p,
-    .page-wrapper ul,
-    .page-wrapper ol {
-        max-width: 60vw
-    }
     h2,
     h3,
     h4 {
