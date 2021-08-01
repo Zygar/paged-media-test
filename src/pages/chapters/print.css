@@ -30,11 +30,27 @@
     }
 }
 
+@page: first-child h4,
+@page: first-child h3,
+@page: first-child h2 {
+    color: red
+}
+
 @media print {
+    p,
+    ol,
+    ul,
+    li,
+    blockquote {
+        orphans: 3;
+        widows: 3;
+    }
     h2,
     h3,
     h4 {
         page-break-after: avoid;
+        column-break-inside: avoid;
+        break-inside: avoid;
     }
     .post {
         column-count: 2
