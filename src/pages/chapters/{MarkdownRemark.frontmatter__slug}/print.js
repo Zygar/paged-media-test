@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import { Link } from "gatsby"
 import { Previewer } from "pagedjs";
-import chapterRenderer from "../chapterRenderer";
+import Chapter from "../chapterRenderer.js";
 import "./print.css"
 
 export default function Template({
@@ -16,10 +16,8 @@ export default function Template({
         <Link to="/">Go home</Link>
         <h1>{frontmatter.title}</h1>
         <p>{frontmatter.author}</p>
-        <div
-          className="blog-post-content"
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
+        <Chapter html={html}></Chapter>
+
       </div>
     </div>
   )

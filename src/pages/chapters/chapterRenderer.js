@@ -1,11 +1,13 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 
-const chapterRenderer = () => (
-    <h1>HELLOOOOOOOOOOOOOOOOOOOOO</h1>
+const Chapter = ({ html }) => (
+    <div dangerouslySetInnerHTML={{ __html: html }} >
+    </div >
+
 )
-chapterRenderer.propTypes = {
-    renderedMarkdown: PropTypes.string
+Chapter.propTypes = {
+    html: PropTypes.string
 }
 
-export default chapterRenderer
+export default Chapter
