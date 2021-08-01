@@ -21,6 +21,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a faucibus metus. Mo
     2. any food that requires a hazard analysis and critical control point plan (HACCP) under applicable federal, state or local law;
     3. raw milk or raw milk products; or
     4. any low-acid canned food or acidified food that requires a scheduled process under applicable federal, state or local law.
+    
 2. A HOME COOKING OPERATION may sell or otherwise provide food directly to consumers only, and not to any food reseller. A HOME COOKING OPERATION may sell food to consumers in person at the operator's home or other location, such as a farmers' market, or remotely by telephone, email or internet website, including through an ONLINE FOOD MARKETPLACE or mobile application.
 3. All food sold and otherwise provided to consumers by the HOME COOKING OPERATION shall be READY-TO-EAT FOOD.
 4. FOOD shall be prepared, cooked, and served or picked up or delivered within a safe time period based on holding equipment capacity. Food from a HOME COOKING OPERATION may be delivered to consumers by the operator, by an employee or agent of the operator, or by a THIRD-PARTY DELIVERY SERVICE.

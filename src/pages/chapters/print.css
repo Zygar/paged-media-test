@@ -1,4 +1,57 @@
+li {
+    padding-left: .25em;
+}
+
+section>ol>li:first-child {
+    counter-reset: list;
+}
+
+ol li::marker {
+    font-weight: bold;
+}
+
+section>ol>li {
+    list-style: none;
+    counter-increment: list;
+}
+
+ol>li::marker {
+    content: "(" counter(list) ")";
+}
+
+section>ol>li>ol {
+    counter-reset: sublist;
+    list-style-type: lower-alpha;
+}
+
+section>ol>li>ol>li {
+    list-style: none;
+    counter-increment: sublist;
+}
+
+section>ol>li>ol>li::marker {
+    content: "(" counter(sublist, lower-alpha) ")";
+}
+
+ol li ol li ol {
+    counter-reset: subsublist;
+    list-style-type: lower-roman;
+}
+
+ol li ol li ol>li {
+    list-style: none;
+    counter-increment: subsublist;
+}
+
+ol li ol li ol>li::marker {
+    content: "(" counter(subsublist, lower-roman) ")";
+}
+
 @media screen {
+    section {
+        max-width: 60vw;
+        margin: 0 auto;
+    }
     .pagedjs_pages {
         display: flex;
         width: calc(var(--pagedjs-width));
@@ -17,11 +70,11 @@
     /* marks: crop cross; */
     size: A4;
     margin: 4.5cm 3.5cm 3.5cm 2.5cm;
-    padding: 0;
+    padding: 0 5cm 0 0;
     @top {
         content: "Autopublished";
+        color: #999;
         text-transform: uppercase;
-        color: red;
         border-bottom: 1px solid black;
         margin-bottom: 2cm;
     }
@@ -32,9 +85,7 @@
 
 @page: first-child h4,
 @page: first-child h3,
-@page: first-child h2 {
-    color: red
-}
+@page: first-child h2 {}
 
 @media print {
     p,
@@ -52,11 +103,10 @@
         column-break-inside: avoid;
         break-inside: avoid;
     }
-    .post {
-        column-count: 2
+    li {
+        break-inside: avoid;
     }
-}
-
-h2+p {
-    color: red;
+    .post {
+        /* column-count: 2 */
+    }
 }
