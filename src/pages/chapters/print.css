@@ -14,17 +14,20 @@
 }
 
 @page {
-    marks: crop cross;
+    /* marks: crop cross; */
     size: A4;
-    margin: 1.5cm 2.5cm 2.5cm 1.5cm;
+    margin: 4.5cm 3.5cm 3.5cm 2.5cm;
     padding: 0;
+    @top {
+        content: "Autopublished";
+        text-transform: uppercase;
+        color: red;
+        border-bottom: 1px solid black;
+        margin-bottom: 2cm;
+    }
     @bottom-right {
         content: counter(page);
     }
-}
-
-.post {
-    column-count: 2
 }
 
 @media print {
@@ -32,6 +35,9 @@
     h3,
     h4 {
         page-break-after: avoid;
+    }
+    .post {
+        column-count: 2
     }
 }
 

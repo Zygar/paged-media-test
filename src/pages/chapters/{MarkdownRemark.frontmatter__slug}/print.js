@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import { Link } from "gatsby"
 import { Previewer } from "pagedjs";
 import Chapter from "../chapterRenderer.js";
-import "./print.css"
+import "../print.css"
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
