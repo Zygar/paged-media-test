@@ -67,25 +67,51 @@ ol li ol li ol>li::marker {
 }
 
 @page {
-    /* marks: crop cross; */
+    marks: crop cross;
     size: A4;
-    margin: 4.5cm 3.5cm 3.5cm 2.5cm;
-    padding: 0 5cm 0 0;
-    @top {
-        content: "Autopublished";
+    margin: 3.5cm 1.5cm 3.5cm 3.5cm;
+    padding: 0 2cm 0 0;
+    @top-left {
+        content: "Moby Dick • Loomings";
         color: #999;
         text-transform: uppercase;
         border-bottom: 1px solid black;
-        margin-bottom: 2cm;
+        padding-bottom: .5cm;
+        margin-bottom: 1cm;
+        align-items: flex-end;
     }
-    @bottom-right {
+    @top-right {
         content: counter(page);
+        color: #999;
+        text-transform: uppercase;
+        border-bottom: 1px solid black;
+        padding-bottom: .5cm;
+        margin-bottom: 1cm;
+        align-items: flex-end;
     }
 }
 
-@page: first-child h4,
-@page: first-child h3,
-@page: first-child h2 {}
+@page:right {
+    margin: 3.5cm 3.5cm 3.5cm 1.5cm;
+    @top-right {
+        content: "Moby Dick • Loomings";
+        color: #999;
+        text-transform: uppercase;
+        border-bottom: 1px solid black;
+        padding-bottom: .5cm;
+        margin-bottom: 1cm;
+        align-items: flex-end;
+    }
+    @top-left {
+        content: counter(page);
+        color: #999;
+        text-transform: uppercase;
+        border-bottom: 1px solid black;
+        padding-bottom: .5cm;
+        margin-bottom: 1cm;
+        align-items: flex-end;
+    }
+}
 
 @media print {
     p,
