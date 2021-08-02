@@ -47,11 +47,11 @@ ol li ol li ol>li::marker {
     content: "(" counter(subsublist, lower-roman) ")";
 }
 
-@media screen {
-    section {
+@media only screen {
+    /* section {
         max-width: 60vw;
         margin: 0 auto;
-    }
+    } */
     .pagedjs_pages {
         display: flex;
         width: calc(var(--pagedjs-width));
