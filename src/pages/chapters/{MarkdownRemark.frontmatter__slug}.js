@@ -10,8 +10,12 @@ export default function Template({
   return (
     <div className="blog-post-container">
       <div className="blog-post">
-        <Link to="/">Go home</Link>
-        <Link to={`/chapters/${frontmatter.slug}.pdf`} >Download</Link>
+        <div style={{ marginBottom: "1.5em", borderBottom: "1px solid #999" }}>
+          <nav>
+            <Link to="/">← Go home</Link><br />
+            <Link to={`/chapters/${frontmatter.slug}.pdf`}>Download PDF</Link> • <Link to={`/chapters/${frontmatter.slug}/print`}>Printer friendly</Link>
+          </nav>
+        </div>
         {/* <h1>{frontmatter.title}</h1>
                 <p>{frontmatter.author}</p> */}
         <section
@@ -19,7 +23,7 @@ export default function Template({
           dangerouslySetInnerHTML={{ __html: html }}
         />
       </div>
-    </div>
+    </div >
   )
 }
 

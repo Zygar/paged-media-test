@@ -10,7 +10,7 @@ export default function Home({
     {
       edges.map(edge => (
         <li key={edge.node.id}>
-          <Link to={`chapters/${edge.node.frontmatter.slug}`}>{edge.node.frontmatter.title}</Link> <small style={{ fontSize: `11px` }}><Link to={`/exports/${edge.node.frontmatter.slug}.pdf`}>Download PDF</Link></small>
+          <Link to={`chapters/${edge.node.frontmatter.slug}`}>{edge.node.frontmatter.title}</Link> • <small style={{ fontSize: `11px` }}><Link to={`/chapters/${edge.node.frontmatter.slug}.pdf`}>Download PDF</Link> • <Link to={`/chapters/${edge.node.frontmatter.slug}/print`}>Printer friendly</Link> </small>
         </li>
       ))
     }
