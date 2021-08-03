@@ -18,7 +18,7 @@ export default function Template({
         </div>
         {/* <h1>{frontmatter.title}</h1>
                 <p>{frontmatter.author}</p> */}
-        <section
+        <article
           className="post"
           dangerouslySetInnerHTML={{ __html: html }}
         />
