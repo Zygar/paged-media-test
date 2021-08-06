@@ -25,7 +25,7 @@ module.exports = {
             // GitHub Flavored Markdown mode (default: true)
             gfm: true,
             // Plugins configs
-            // plugins: [`gatsby-remark-tufte`],
+            plugins: [`gatsby-remark-tufte`],
         },
     },
     {
