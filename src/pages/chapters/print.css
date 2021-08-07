@@ -11,6 +11,47 @@
     }
 }
 
+.post>section>ol {
+    counter-reset: masterClause;
+}
+
+li::before {
+    color: white;
+    background-color: red;
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+.post>section>ol>li>ol {
+    counter-reset: subClause;
+}
+
+ol {
+    list-style: none;
+}
+
+.post>section>ol>li::before,
+.post>section>ol>li::marker {
+    content: counter(masterClause);
+    background-color: blue;
+}
+
+.post>section>ol>li>ol>li::before,
+.post>section>ol>li>ol>li::marker {
+    content: counter(subClause);
+    background-color: purple
+}
+
+.post>section>ol>li {
+    counter-increment: masterClause;
+}
+
+.post>section>ol>li>ol>li {
+    counter-increment: subClause;
+}
+
+
+/* 
 li {
     padding-left: .25em;
 }
@@ -58,7 +99,7 @@ ol li ol li ol>li {
 
 ol li ol li ol>li::marker {
     content: "(" counter(subsublist, lower-roman) ")";
-}
+} */
 
 section>dl,
 section>ol,
@@ -168,8 +209,8 @@ li[data-split-from]::marker {
     ul,
     li,
     blockquote {
-        /* orphans: 3;
-        widows: 3; */
+        orphans: 2;
+        widows: 2;
     }
     h2,
     h3,
