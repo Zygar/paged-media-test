@@ -1,5 +1,10 @@
 @media only screen {
     body {
+        /* max-width: 80vw; */
+        /* margin-left: auto;
+        margin-right: auto; */
+    }
+    .blog-post {
         max-width: 80vw;
         margin-left: auto;
         margin-right: auto;
@@ -58,14 +63,32 @@ ol li ol li ol>li::marker {
 section>dl,
 section>ol,
 section>ul {
-    width: 60%;
+    /* width: 60%; */
 }
 
 li[data-split-from]::marker {
     color: red
 }
 
+@page {
+    --usable-page-area: calc((var(--pagedjs-pagebox-width) - var(--pagedjs-margin-left) - var(--pagedjs-margin-right)));
+    /* e.g. 210 - 25 - 25  = 160mm */
+    --page-body-area: calc(var(--usable-page-area) * 0.6);
+    --page-margin-area: calc(var(--usable-page-area) - var(--page-body-area));
+    --page-margin-body-gutter: 12mm;
+}
 
+.post {
+    width: calc(var(--page-body-area))
+}
+
+.sidenote {
+    /* color: red; */
+    font-size: 8pt;
+    /* padding: 16pt; */
+    background: #eee;
+    /* margin-bottom: 16pt; */
+}
 
 @media only screen {
     .pagedjs_pages {
@@ -77,7 +100,7 @@ li[data-split-from]::marker {
         justify-content: center;
     }
     .pagedjs_page {
-        margin: 10mm;
+        /* margin: 10mm; */
         border: solid 1px gray;
     }
 }
@@ -85,8 +108,7 @@ li[data-split-from]::marker {
 @page {
     marks: crop cross;
     size: A4;
-    margin: 3.5cm 1.5cm 3.5cm 3.5cm;
-    padding: 0 0 0;
+    margin: 4cm;
     @top-left {
         content: "Moby Dick • Loomings";
         color: #999;
@@ -105,10 +127,21 @@ li[data-split-from]::marker {
         margin-bottom: 1cm;
         align-items: flex-end;
     }
+    @top-right-corner {
+        content: counter(page)
+    }
 }
 
-@page:right {
-    margin: 3.5cm 3.5cm 3.5cm 1.5cm;
+@page: left {
+    /* margin-left: 3cm; */
+}
+
+.pagedjs_left_page section.post {
+    margin-left: auto
+}
+
+@page: right {
+    /* margin-right: 3cm; */
     @top-right {
         content: "Moby Dick • Loomings";
         color: #999;
@@ -135,15 +168,19 @@ li[data-split-from]::marker {
     ul,
     li,
     blockquote {
-        /* orphans: 3; */
-        /* widows: 3; */
+        /* orphans: 3;
+        widows: 3; */
     }
     h2,
     h3,
     h4 {
-        /* page-break-after: avoid; */
+        page-break-after: avoid;
         /* column-break-inside: avoid; */
         /* break-inside: avoid; */
+    }
+    h2+p {
+        page-break-after: avoid;
+        break-inside: avoid;
     }
     li {
         /* break-inside: avoid; */

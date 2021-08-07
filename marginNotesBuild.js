@@ -1,14 +1,11 @@
-import { registerHandlers } from 'pagedjs'
-import { Handler } from "pagedjs";
-console.log({ registerHandlers })
-
+// import { registerHandlers } from 'pagedjs'
+// import { Handler } from "pagedjs";
 let classNotes = "sidenote"; // ← Change the CLASS of the notes here
 let notesFloat = "outside"; // ← Change the POSITION of the notes here
 
-class marginNotes extends Handler {
+class marginNotes extends Paged.Handler {
     constructor(chunker, polisher, caller) {
         super(chunker, polisher, caller);
-
     }
 
     beforeParsed(content) {
@@ -39,10 +36,8 @@ class marginNotes extends Handler {
 
 
         /* NOTE FLOAT ---------------------------------------------------------------------------------- */
-
-        let positionRight = 'left: calc(var(--pagedjs-pagebox-width) - var(--pagedjs-margin-left) - var(--pagedjs-margin-right) - 1px); width: var(--pagedjs-margin-right);';
-        let positionLeft = 'left: calc(var(--pagedjs-margin-left)*-1 - 1px); width: var(--pagedjs-margin-left);'
-
+        let positionRight = 'left: calc(var(--page-body-area) + var(--page-margin-body-gutter)); width: calc(var(--page-margin-area) - var(--page-margin-body-gutter))';
+        let positionLeft = 'left:0; width: calc(var(--page-margin-area) - var(--page-margin-body-gutter))';
         let notePosition;
 
         switch (notesFloat) {
@@ -195,7 +190,7 @@ class marginNotes extends Handler {
     }/* end afterPageLayout*/
 
 }
-registerHandlers(marginNotes);
+Paged.registerHandlers(marginNotes);
 
 
 
@@ -256,4 +251,3 @@ function toCamelClassNote(elem) {
     let classCamel = splitClass.reduce(reducer);
     return classCamel;
 }
-

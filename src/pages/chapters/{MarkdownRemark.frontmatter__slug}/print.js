@@ -46,10 +46,8 @@ export default function Template({
 
 
       /* NOTE FLOAT ---------------------------------------------------------------------------------- */
-
-      let positionRight = 'left: calc(var(--pagedjs-pagebox-width) - var(--pagedjs-margin-left) - var(--pagedjs-margin-right) - 1px); width: var(--pagedjs-margin-right);';
-      let positionLeft = 'left: calc(var(--pagedjs-margin-left)*-1 - 1px); width: var(--pagedjs-margin-left);'
-
+      let positionRight = 'left: calc(var(--page-body-area) + var(--page-margin-body-gutter)); width: calc(var(--page-margin-area) - var(--page-margin-body-gutter))';
+      let positionLeft = 'left:0; width: calc(var(--page-margin-area) - var(--page-margin-body-gutter))';
       let notePosition;
 
       switch (notesFloat) {

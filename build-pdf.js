@@ -13,7 +13,7 @@ const genChapters = function (chapters) {
 }
 
 const genPdf = function (chapter) {
-    exec(`pagedjs-cli 'http://localhost:8069/chapters/${chapter}' -o '${outputDir}/${chapter}.pdf'`, (error, stdout, stderr) => {
+    exec(`pagedjs-cli 'http://localhost:8069/chapters/${chapter}' -o '${outputDir}/${chapter}.pdf' --additional-script './marginNotesBuild.js' `, (error, stdout, stderr) => {
         if (error) {
             console.log(`error: ${error.message}`);
             return;
