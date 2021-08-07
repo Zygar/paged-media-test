@@ -136,7 +136,7 @@ li[data-split-from]::marker {
     /* margin-left: 3cm; */
 }
 
-.pagedjs_left_page section.post {
+.pagedjs_left_page .post {
     margin-left: auto
 }
 
