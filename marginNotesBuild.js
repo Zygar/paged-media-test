@@ -1,7 +1,7 @@
 // import { registerHandlers } from 'pagedjs'
 // import { Handler } from "pagedjs";
 let classNotes = "sidenote"; // ← Change the CLASS of the notes here
-let notesFloat = "outside"; // ← Change the POSITION of the notes here
+let notesFloat = "right"; // ← Change the POSITION of the notes here
 
 class marginNotes extends Paged.Handler {
     constructor(chunker, polisher, caller) {
@@ -84,7 +84,7 @@ class marginNotes extends Paged.Handler {
           counter-increment: markerNote_' + toCamelClassNote(classNotes) + ';\
       }\
       .note-marker_' + classNotes + '::before {\
-        content: counter(markerNote_' + toCamelClassNote(classNotes) + ') ". ";\
+        content: counter(markerNote_' + toCamelClassNote(classNotes) + ');\
       }\
     ' + notePosition);
 

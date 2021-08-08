@@ -48,12 +48,15 @@ const typography = new Typography(
                     display: 'block',
                     float: 'left',
                     lineHeight: rhythm(1),
-                    fontSize: "9pt"
+                    fontSize: "8pt"
+                },
+                '.sidenote': {
+                    fontSize: '7pt'
                 },
 
                 "@media only print": {
                     html: {
-                        fontSize: "11pt"
+                        fontSize: "9pt"
                     }
                 }
             }

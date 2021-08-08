@@ -5,12 +5,11 @@
         margin-right: auto; */
     }
     .blog-post {
-        max-width: 80vw;
+        /* max-width: 80vw; */
         margin-left: auto;
         margin-right: auto;
     }
 }
-
 
 ol {
     list-style: none;
@@ -31,11 +30,12 @@ ol {
 li::before {
     /* color: white; */
     font-weight: bold;
-    overflow:hidden;
-    display:block;
+    overflow: hidden;
+    display: block;
     width: 1.61rem;
     margin-left: -1.61rem;
-    color: #ff6e61;
+    color: #888;
+    white-space: nowrap;
 }
 
 .post>section>ol>li {
@@ -63,6 +63,7 @@ li::before {
 .post>section>ol>li>ol>li>ol>li::before {
     content: "("counter(subSubClause, lower-roman)")";
 }
+
 
 /* 
 li {
@@ -138,22 +139,110 @@ li[data-split-from]::marker {
 
 .sidenote {
     /* color: red; */
-    font-size: 8pt;
-    padding: 0.805rem;
+    /* font-size: 8pt; */
+    padding-bottom: 1.61rem;
     /* background: #eee; */
-    margin-bottom: 1.61rem;
+    /* margin-bottom: 1.61rem; */
     font-family: system-ui;
     /* background-color: #ff6e61; */
     /* color:#fff; */
     color: #ff6e61;
 }
 
-h2 {color:#ff6e61   }
+h2 {
+    color: #ff6e61
+}
+
 .note-marker_sidenote::before {
     vertical-align: super;
     /* float: left; */
     margin-right: 0.4025rem;
     font-size: 6pt;
+}
+
+@media only screen {
+    .post {
+        width: 55%;
+    }
+    body {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1400px;
+        counter-reset: sidenote-counter;
+        padding-left: 12.5%;
+        padding-right: 12.5%;
+    }
+    .sidenote,
+    .marginnote {
+        float: right;
+        clear: right;
+        margin-right: -60%;
+        width: 50%;
+        margin-top: 0.3rem;
+        margin-bottom: 0;
+        /* vertical-align: baseline; */
+        position: relative;
+    }
+    .sidenote-number {
+        counter-increment: sidenote-counter;
+    }
+    .sidenote-number:after,
+    .sidenote:before {
+        font-family: et-book-roman-old-style;
+        position: relative;
+        vertical-align: baseline;
+    }
+    .sidenote-number:after {
+        content: counter(sidenote-counter);
+        font-size: 1rem;
+        top: -0.5rem;
+        left: 0.1rem;
+    }
+    .sidenote:before {
+        content: counter(sidenote-counter) " ";
+        font-size: 0.7rem;
+        top: -0.5rem;
+    }
+    input.margin-toggle {
+        display: none;
+    }
+    label.sidenote-number {
+        display: inline;
+    }
+    label.margin-toggle:not(.sidenote-number) {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    body {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+    .post {
+        width: 100%;
+    }
+    label.margin-toggle:not(.sidenote-number) {
+        display: inline;
+    }
+    .sidenote,
+    .marginnote {
+        display: none;
+    }
+    .margin-toggle:checked+.sidenote,
+    .margin-toggle:checked+.marginnote {
+        display: block;
+        float: left;
+        left: 1rem;
+        clear: both;
+        width: 95%;
+        margin: 1rem 2.5%;
+        vertical-align: baseline;
+        position: relative;
+    }
+    label {
+        cursor: pointer;
+    }
 }
 
 @media only screen {
@@ -172,7 +261,12 @@ h2 {color:#ff6e61   }
 }
 
 @media only print {
-    .margin-toggle {display: none;}
+    .margin-toggle {
+        display: none;
+    }
+    .hide-on-print {
+        display: none;
+    }
 }
 
 .note-call_sidenote::after {
@@ -186,13 +280,14 @@ h2 {color:#ff6e61   }
     border-radius: 4px;
 }
 
-h2 {  string-set: chapter content(text) }
+h2 {
+    string-set: chapter content(text)
+}
 
 @page {
     marks: crop cross;
     size: A4;
     margin: 3cm 2.5cm 2.5cm 2.5cm;
-   
     @top-left {
         border-bottom: 1px solid #999;
         content: "Model Legislation";
@@ -204,7 +299,6 @@ h2 {  string-set: chapter content(text) }
         padding-bottom: .25cm;
         align-items: flex-end;
     }
-
     @top-right {
         content: string(chapter) " • " counter(page);
         min-width: 5cm;
@@ -218,11 +312,9 @@ h2 {  string-set: chapter content(text) }
     }
 }
 
-
 .pagedjs_left_page .post {
     /* margin-left: auto */
 }
-
 
 @media print {
     p,

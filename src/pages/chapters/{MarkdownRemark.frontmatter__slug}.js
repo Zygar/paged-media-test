@@ -10,7 +10,7 @@ export default function Template({
   return (
     <div className="blog-post-container">
       <div className="blog-post">
-        <div style={{ marginBottom: "1.5em", borderBottom: "1px solid #999" }}>
+        <div className='hide-on-print' style={{ marginBottom: "1.5em", borderBottom: "1px solid #999" }}>
           <nav>
             <Link to="/">← Go home</Link><br />
             <Link to={`/chapters/${frontmatter.slug}.pdf`}>Download PDF</Link> • <Link to={`/chapters/${frontmatter.slug}/print`}>Printer friendly</Link>
