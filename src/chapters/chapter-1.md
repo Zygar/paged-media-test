@@ -4,9 +4,7 @@ title: "Here is an example of some legal text"
 author: "COOK Alliance"
 ---
 
-## Sec. 1 - Definitions
-
-
+## Definitions
 
 1. HOME COOKING OPERATION means an enterprise in a private home that is operated by a resident of the private home that stores, handles, prepares, packages, serves, and sells or otherwise provides food to consumers. A HOME COOKING OPERATION does not include a food processing plant, food service establishment, temporary food service establishment, caterer, cottage food operation[^1], educational institution, residential group home facility, assisted living facility, or health care facility. Nothing in this chapter shall prevent the operator of a HOME COOKING OPERATION from separately operating, or applying for a license or permit to operate, another type of food business in accordance with law.[^2]
 
@@ -35,7 +33,7 @@ author: "COOK Alliance"
 6. A HOME COOKING OPERATION shall comply with regulations adopted by the STATE AGENCY under this chapter.
 
 ## Permitting
-
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a faucibus metus. Morbi fermentum turpis ac sem porttitor ornare. Ut est mi, dictum et ultricies vel, accumsan id elit. 
 
 1. No person shall maintain or operate a HOME COOKING OPERATION without a valid permit to operate issued by the REGULATORY AUTHORITY. 
 2. A permit, once issued, shall be nontransferable. A permit shall be valid only for the person or legal entity and location specified by such permit and, unless suspended or revoked for cause, for the time period indicated.
