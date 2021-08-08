@@ -28,19 +28,27 @@ const typography = new Typography(
         bodyFontFamily: ["Tiempos Text Test", "serif"],
         overrideStyles: ({ rhythm, scale }, options) => {
             return {
-                h1: {
-
+                h2: {
+                    marginTop: rhythm(2)
                 },
                 'ol': {
                     marginLeft: "0px"
                 },
                 'ol li': {
-                    marginLeft: `-${rhythm(1)}`,
-                    paddingLeft: rhythm(1)
+                    // marginLeft: `-${rhythm(1)}`,
+                    // paddingLeft: rhythm(1)
 
                 },
                 'ol li ol': {
                     paddingBottom: rhythm(1 / 2)
+                },
+                'li::before': {
+                    width: rhythm(1),
+                    marginLeft: `-${rhythm(1)}`,
+                    display: 'block',
+                    float: 'left',
+                    lineHeight: rhythm(1),
+                    fontSize: "9pt"
                 },
 
                 "@media only print": {

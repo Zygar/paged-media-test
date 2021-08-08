@@ -11,45 +11,58 @@
     }
 }
 
-.post>section>ol {
-    counter-reset: masterClause;
+
+ol {
+    list-style: none;
 }
 
-li::before {
-    color: white;
-    background-color: red;
-    font-weight: bold;
-    padding: 0 8px;
+.post>section>ol {
+    counter-reset: masterClause;
 }
 
 .post>section>ol>li>ol {
     counter-reset: subClause;
 }
 
-ol {
-    list-style: none;
+.post>section>ol>li>ol>li {
+    counter-reset: subSubClause;
 }
 
-.post>section>ol>li::before,
-.post>section>ol>li::marker {
-    content: counter(masterClause);
-    background-color: blue;
-}
-
-.post>section>ol>li>ol>li::before,
-.post>section>ol>li>ol>li::marker {
-    content: counter(subClause);
-    background-color: purple
+li::before {
+    /* color: white; */
+    font-weight: bold;
+    overflow:hidden;
+    display:block;
+    width: 1.61rem;
+    margin-left: -1.61rem;
+    color: #ff6e61;
 }
 
 .post>section>ol>li {
     counter-increment: masterClause;
 }
 
+.post>section>ol>li::before {
+    content: '('counter(masterClause)')';
+    /* background-color: blue; */
+}
+
 .post>section>ol>li>ol>li {
     counter-increment: subClause;
 }
 
+.post>section>ol>li>ol>li::before {
+    content: "("counter(subClause, lower-alpha)")";
+    /* background-color: purple */
+}
+
+.post>section>ol>li>ol>li>ol>li {
+    counter-increment: subSubClause;
+}
+
+.post>section>ol>li>ol>li>ol>li::before {
+    content: "("counter(subSubClause, lower-roman)")";
+}
 
 /* 
 li {
@@ -126,9 +139,21 @@ li[data-split-from]::marker {
 .sidenote {
     /* color: red; */
     font-size: 8pt;
-    /* padding: 16pt; */
-    background: #eee;
-    /* margin-bottom: 16pt; */
+    padding: 0.805rem;
+    /* background: #eee; */
+    margin-bottom: 1.61rem;
+    font-family: system-ui;
+    /* background-color: #ff6e61; */
+    /* color:#fff; */
+    color: #ff6e61;
+}
+
+h2 {color:#ff6e61   }
+.note-marker_sidenote::before {
+    vertical-align: super;
+    /* float: left; */
+    margin-right: 0.4025rem;
+    font-size: 6pt;
 }
 
 @media only screen {
@@ -146,62 +171,58 @@ li[data-split-from]::marker {
     }
 }
 
+@media only print {
+    .margin-toggle {display: none;}
+}
+
+.note-call_sidenote::after {
+    vertical-align: super;
+    color: #fff;
+    font-size: 6pt;
+    font-family: system-ui;
+    font-weight: bold;
+    background-color: #ff6e61;
+    padding: 2px;
+    border-radius: 4px;
+}
+
+h2 {  string-set: chapter content(text) }
+
 @page {
     marks: crop cross;
     size: A4;
-    margin: 4cm;
+    margin: 3cm 2.5cm 2.5cm 2.5cm;
+   
     @top-left {
-        content: "Moby Dick • Loomings";
+        border-bottom: 1px solid #999;
+        content: "Model Legislation";
+        letter-spacing: 0.05em;
+        margin-bottom: .75cm;
         color: #999;
         text-transform: uppercase;
-        border-bottom: 1px solid black;
-        padding-bottom: .5cm;
-        margin-bottom: 1cm;
+        font-size: 9pt;
+        padding-bottom: .25cm;
         align-items: flex-end;
     }
+
     @top-right {
-        content: counter(page);
+        content: string(chapter) " • " counter(page);
+        min-width: 5cm;
         color: #999;
         text-transform: uppercase;
-        border-bottom: 1px solid black;
-        padding-bottom: .5cm;
-        margin-bottom: 1cm;
+        border-bottom: 1px solid #999;
+        padding-bottom: .25cm;
+        margin-bottom: .75cm;
         align-items: flex-end;
-    }
-    @top-right-corner {
-        content: counter(page)
+        font-size: 9pt;
     }
 }
 
-@page: left {
-    /* margin-left: 3cm; */
-}
 
 .pagedjs_left_page .post {
-    margin-left: auto
+    /* margin-left: auto */
 }
 
-@page: right {
-    /* margin-right: 3cm; */
-    @top-right {
-        content: "Moby Dick • Loomings";
-        color: #999;
-        text-transform: uppercase;
-        border-bottom: 1px solid black;
-        padding-bottom: .5cm;
-        margin-bottom: 1cm;
-        align-items: flex-end;
-    }
-    @top-left {
-        content: counter(page);
-        color: #999;
-        text-transform: uppercase;
-        border-bottom: 1px solid black;
-        padding-bottom: .5cm;
-        margin-bottom: 1cm;
-        align-items: flex-end;
-    }
-}
 
 @media print {
     p,

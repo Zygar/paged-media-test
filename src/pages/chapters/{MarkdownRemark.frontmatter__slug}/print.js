@@ -11,7 +11,7 @@ export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
   let classNotes = "sidenote"; // ← Change the CLASS of the notes here
-  let notesFloat = "outside"; // ← Change the POSITION of the notes here
+  let notesFloat = "right"; // ← Change the POSITION of the notes here
 
   class marginNotes extends Handler {
     constructor(chunker, polisher, caller) {
@@ -94,7 +94,7 @@ export default function Template({
           counter-increment: markerNote_' + toCamelClassNote(classNotes) + ';\
       }\
       .note-marker_' + classNotes + '::before {\
-        content: counter(markerNote_' + toCamelClassNote(classNotes) + ') ". ";\
+        content: counter(markerNote_' + toCamelClassNote(classNotes) + ') ;\
       }\
     ' + notePosition);
 
