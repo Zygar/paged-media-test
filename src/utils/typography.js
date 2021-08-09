@@ -1,31 +1,13 @@
 import Typography from "typography"
-import theme from 'typography-theme-lincoln'
-
-// const typography = new Typography(
-//     {
-//         ...theme,
-//         overrideThemeStyles: () => ({
-//             "@media only print": {
-//                 html: {
-//                     fontSize: "9pt"
-//                 }
-//             }
-//         })
-//     });
 
 const typography = new Typography(
     {
         baseFontSize: "18px",
         baseLineHeight: 1.61,
         headerFontFamily: [
-            "Söhne Test",
-            "Helvetica Neue",
-            "Segoe UI",
-            "Helvetica",
-            "Arial",
-            "sans-serif",
+            "Tiempos-Text"
         ],
-        bodyFontFamily: ["Tiempos Text Test", "serif"],
+        bodyFontFamily: ["Tiempos-Text"],
         overrideStyles: ({ rhythm, scale }, options) => {
             return {
                 h2: {
