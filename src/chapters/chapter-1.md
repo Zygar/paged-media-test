@@ -5,11 +5,8 @@ author: "COOK Alliance"
 ---
 
 ## Definitions
-<<<<<<< HEAD
-=======
 
 
->>>>>>> 4441f04 (adds mostly final legislation text)
 
 1. HOME COOKING OPERATION means an enterprise in a private home that is operated by a resident of the private home that stores, handles, prepares, packages, serves, and sells or otherwise provides food to consumers. A HOME COOKING OPERATION does not include a food processing plant, food service establishment, temporary food service establishment, caterer, cottage food operation[^1], educational institution, residential group home facility, assisted living facility, or health care facility. Nothing in this chapter shall prevent the operator of a HOME COOKING OPERATION from separately operating, or applying for a license or permit to operate, another type of food business in accordance with law.[^2]
 
@@ -186,12 +183,9 @@ A THIRD-PARTY DELIVERY SERVICE that delivers HOME COOKING OPERATION food must:
 [^4]: Replace "state agency" with the term used to refer to the state-level agency that will have overall responsibility for this program and will promulgate the governing regulations
 
 [^5]: "A state may choose to limit the activities of the Home Cooking Operation through placing restrictions on the number of meals prepared or customers served per day, the number of meals prepared or customers served per week, or the amount of revenue made in a year. States should ensure that home cooks can make a living wage regardless of the cap put in place. One possible formula is: Livable wage for the state * 2 (because of the 50% margins in food) + $5,000 for overhead (permits, insurance, etc) = cap. States might also choose to limit the number of employees a Home Cooking Operation can have."
-<<<<<<< HEAD
-=======
 
 [^6]: Existing state law provides state and local authorities with enforcement powers, authorizes remedies and penalties for violations of laws within the agencies' jurisdiction (such as administrative orders, court injunctions, and criminal penalties), and sets out the process by which remedies and penalties may be imposed. Those enforcement and penalty provisions likely will apply to Home Cooking Operations unless this statute specifically exempts Home Cooking Operations from the usual enforcement mechanisms.
 
 [^7]: See the Home Cooking Operations Model Code for an example you can adapt for your state.
 
 [^8]: ​​Change "retail food establishment," as needed, to whatever term is used in the state's law (or a citation) to refer to the regulations applicable to restaurants or retail food stores. In most states, these regulations are based on or incorporate by reference FDA's model Food Code.
->>>>>>> 4441f04 (adds mostly final legislation text)
