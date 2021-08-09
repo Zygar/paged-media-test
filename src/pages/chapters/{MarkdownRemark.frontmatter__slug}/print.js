@@ -268,7 +268,7 @@ export default function Template({
   React.useEffect(() => {
     const fragmentPrep = function (html) {
       const parser = new DOMParser();
-      let wrappedHtml = `<section class='post'>${html}</section>`
+      let wrappedHtml = `<article class='post ${frontmatter.theme}' style='counter-set: h1counter ${frontmatter.numberingStart}'>${html}</section>`
       let parsed = parser.parseFromString(wrappedHtml, "text/html");
       let parsedFilteredDom = parsed.querySelectorAll('body > *');
       console.log(parsedFilteredDom);
@@ -308,6 +308,8 @@ export const pageQuery = graphql`
         slug
         title
         author
+        theme
+        numberingStart
       }
     }
   }

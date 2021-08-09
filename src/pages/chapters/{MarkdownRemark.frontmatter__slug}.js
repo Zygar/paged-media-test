@@ -19,7 +19,8 @@ export default function Template({
         {/* <h1>{frontmatter.title}</h1>
                 <p>{frontmatter.author}</p> */}
         <article
-          className="post"
+          className={`post ${frontmatter.theme}`}
+          style={{ counterSet: `h1counter ${frontmatter.numberingStart}` }}
           dangerouslySetInnerHTML={{ __html: html }}
         />
       </div>
@@ -35,6 +36,8 @@ export const pageQuery = graphql`
         slug
         title
         author
+        theme
+        numberingStart
       }
     }
   }
