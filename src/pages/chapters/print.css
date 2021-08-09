@@ -207,8 +207,8 @@ li[data-split-from]::marker {
     --page-margin-body-gutter: 12mm;
 }
 
-.post {
-    width: calc(var(--page-body-area))
+.pagedjs_pages .post {
+    width: calc(var(--page-body-area))!important
 }
 
 .sidenote {
@@ -229,7 +229,7 @@ h2 {
 }
 
 @media only screen {
-    .post:not(.pagedjs_page .post) {
+    .post {
         width: 55%;
     }
     body {
@@ -240,8 +240,8 @@ h2 {
         padding-left: 12.5%;
         padding-right: 12.5%;
     }
-    .sidenote:not(.pagedjs_page .sidenote),
-    .marginnote:not(.pagedjs_page .marginnote) {
+    .sidenote,
+    .marginnote {
         float: right;
         clear: right;
         margin-right: -60%;
@@ -251,21 +251,27 @@ h2 {
         /* vertical-align: baseline; */
         position: relative;
     }
-    .sidenote-number:not(.pagedjs_page .sidenote-number) {
+    .pagedjs_pages .sidenote-number {
+        display: none;
+    }
+    .pagedjs_pages .sidenote:before {
+        display: none;
+    }
+    .sidenote-number {
         counter-increment: sidenote-counter;
     }
-    .sidenote-number:not(.pagedjs_page .sidenote-number):after,
-    .sidenote:not(.pagedjs_page .sidenote):before {
+    .sidenote-number:after,
+    .sidenote:before {
         position: relative;
         vertical-align: baseline;
     }
-    .sidenote-number:not(.pagedjs_page .sidenote-number):after {
+    .sidenote-number:after {
         content: counter(sidenote-counter);
         font-size: 1rem;
         top: -0.5rem;
         left: 0.1rem;
     }
-    .sidenote:not(.pagedjs_page .sidenote):before {
+    .sidenote:before {
         content: counter(sidenote-counter) " ";
         font-size: 0.7rem;
         top: -0.5rem;

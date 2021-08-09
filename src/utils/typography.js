@@ -38,7 +38,7 @@ const typography = new Typography(
 
                 "@media only print": {
                     html: {
-                        fontSize: "9pt"
+                        fontSize: "9.5pt"
                     }
                 }
             }
