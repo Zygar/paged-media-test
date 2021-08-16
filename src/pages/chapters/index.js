@@ -4,8 +4,8 @@ import { Link } from "gatsby"
 import { Previewer } from "pagedjs";
 import { registerHandlers } from 'pagedjs'
 import { Handler } from "pagedjs";
-import Chapter from "./chapterRenderer.js";
-import "./print.css"
+import Chapter from "../chapterRenderer.js";
+import "../print.css"
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.

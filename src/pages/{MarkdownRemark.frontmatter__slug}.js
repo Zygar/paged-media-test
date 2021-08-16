@@ -13,7 +13,7 @@ export default function Template({
         <div className='hide-on-print' style={{ marginBottom: "1.5em", borderBottom: "1px solid #999" }}>
           <nav>
             <Link to="/">← Go home</Link><br />
-            <Link to={`/chapters/${frontmatter.slug}.pdf`}>Download PDF</Link> • <Link to={`/chapters/${frontmatter.slug}/print`}>Printer friendly</Link>
+            <Link to={`/${frontmatter.slug}.pdf`}>Download PDF</Link> • <Link to={`/${frontmatter.slug}/print`}>Printer friendly</Link>
           </nav>
         </div>
         {/* <h1>{frontmatter.title}</h1>

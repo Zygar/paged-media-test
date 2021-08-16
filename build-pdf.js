@@ -1,9 +1,7 @@
 const path = require(`path`)
 const { exec } = require("child_process");
 const currentDir = process.cwd();
-const targetDir = `http://localhost:8069/chapters/chapter-1/print/`;
-const outputDir = `${currentDir}/public/chapters/`;
-// const chapters = ['chapter-1', 'chapter-2', 'chapter-3']
+const outputDir = `${currentDir}/public`;
 
 const genChapters = function (chapters) {
     for (const index in chapters) {
@@ -13,7 +11,7 @@ const genChapters = function (chapters) {
 }
 
 const genPdf = function (chapter) {
-    exec(`pagedjs-cli 'http://localhost:8069/chapters/${chapter}' -o '${outputDir}/${chapter}.pdf' --additional-script './marginNotesBuild.js' `, (error, stdout, stderr) => {
+    exec(`pagedjs-cli 'http://localhost:8069/${chapter}' -o '${outputDir}/${chapter}.pdf' --additional-script './marginNotesBuild.js' `, (error, stdout, stderr) => {
         if (error) {
             console.log(`error: ${error.message}`);
             return;
