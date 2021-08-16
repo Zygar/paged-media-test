@@ -19,7 +19,7 @@ numberingStart: 4
 
 ## FOOD that Requires a HACCP Plan May Not Be Prepared
 
-1. As per § 2-1(F), FOOD preparation must not involve processes that require a hazardous analysis and critical control (HACCP) plan.
+1. As per § 2-1(H), FOOD preparation must not involve processes that require a hazardous analysis and critical control (HACCP) plan.
 
 
 ## FOOD SOURCES
