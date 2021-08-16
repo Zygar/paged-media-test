@@ -1,6 +1,6 @@
 ---
 slug: "model-code/2-permitting"
-title: "Model Code • 01 Definitions"
+title: "Model Code • 02 - Permitting"
 author: "COOK Alliance"
 theme: "model-code"
 numberingStart: 2
@@ -27,25 +27,19 @@ numberingStart: 2
 
 ## Application
 
-
-
-1. The REGULATORY AUTHORITY shall create a permit application form that is available via a website, mail, and electronic mail. The application shall require the APPLICANT to submit standard operating procedures[^1], including: 
-
-
+1. The REGULATORY AUTHORITY shall create a permit application form that is available via a website, mail, and electronic mail. The application shall require the APPLICANT to submit standard operating procedures[^1], including:
     1. A list of all food types or products[^2] that will be handled;
-
-
-    2.  Proposed procedures and methods of food preparation and handling;
-    3.  Procedures, methods, and schedules for cleaning utensils and equipment 		and for the disposal of refuse;
-    4.  How food will be maintained at safe holding temperatures pending pickup by consumers or during delivery;
-    5. Information about the type of service, such as consumer pick up and delivery, in-home dining, instructional courses, or a combination of 			processes; and
-    6. A list of the areas within the home and/or in outdoor areas, such as a porch or backyard with a barbecue, to be covered by the permit.		
+    2. Proposed procedures and methods of food preparation and handling;
+    3. Procedures, methods, and schedules for cleaning utensils and equipment and for the disposal of refuse;
+    4. How food will be maintained at safe holding temperatures pending pickup by consumers or during delivery;
+    5. Information about the type of service, such as consumer pick up and delivery, in-home dining, instructional courses, or a combination of processes; and
+    6. A list of the areas within the home and/or in outdoor areas, such as a porch or backyard with a barbecue, to be covered by the permit.
 2. If the REGULATORY AUTHORITY denies the permit application, the REGULATORY AUTHORITY must provide the APPLICANT with notice of the specific reasons and the opportunity to cure the deficiencies, as well as notice of the APPLICANT’S right to appeal and an explanation of the process and time frames for appeal that are provided in law. 
 3. The REGULATORY AUTHORITY may charge a permit fee not to exceed &lt;<_____>> or in an amount that does not exceed the reasonable administrative costs of the REGULATORY AUTHORITY in issuing the permit, whichever is less.
-4.  The REGULATORY AUTHORITY shall provide the PERMIT HOLDER the opportunity to update the FOOD types, products handled, and service or delivery methods without requiring the PERMIT HOLDER to submit a new permit application.
-5.  The REGULATORY AUTHORITY shall post on its internet website the requirements for the permitting of a HOME COOKING OPERATION, pursuant to this chapter, which shall be written at a high school level in English and in any other languages, as appropriate for the jurisdiction.
+4. The REGULATORY AUTHORITY shall provide the PERMIT HOLDER the opportunity to update the FOOD types, products handled, and service or delivery methods without requiring the PERMIT HOLDER to submit a new permit application.
+5. The REGULATORY AUTHORITY shall post on its internet website the requirements for the permitting of a HOME COOKING OPERATION, pursuant to this chapter, which shall be written at a high school level in English and in any other languages, as appropriate for the jurisdiction.
 
 
-[^1]:We did not include days and times on purpose. It's extremely important HCO have freedom and flexibility to operate when they want while still meeting the food safety and code requirements, thus we did not include the need to report hours of operation. Chapter 8 requires that all inspections must occur during a mutually agreed upon time.
+[^1]: We did not include days and times on purpose. It's extremely important HCO have freedom and flexibility to operate when they want while still meeting the food safety and code requirements, thus we did not include the need to report hours of operation. Chapter 8 requires that all inspections must occur during a mutually agreed upon time.
 
 [^2]: The regulatory agency can determine the manner in which this information is collected. For example, it could decide to include a checklist of categories of food that the HCO can check off. The goal is to make it flexible as some cooks will be hosting a class of going to the farmers market and then cooking at their home and others will vary their meals every week. This form must be as flexible as the cooks are going to be.

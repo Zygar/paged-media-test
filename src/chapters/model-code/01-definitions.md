@@ -6,7 +6,7 @@ theme: "model-code"
 numberingStart: 1
 ---
 
-# Definitions[^1]
+# Definitions [^1]
 
 
 ## Statement of Application and Listing of Terms
@@ -34,23 +34,17 @@ The following definitions shall apply in the interpretation and application of t
 
 **CORROSION-RESISTANT MATERIAL** - means a material that maintains acceptable surface cleanability characteristics under prolonged influence of the FOOD to be contacted, the normal use of cleaning compounds and SANITIZING solutions, and other conditions of the use environment.
 
-**EASILY CLEANABLE **- means a characteristic of a surface that allows effective removal of soil by normal cleaning methods and decreases the likelihood of the surface's role in introducing pathogenic or toxigenic agents or other contaminants into FOOD.
+**EASILY CLEANABLE** - means a characteristic of a surface that allows effective removal of soil by normal cleaning methods and decreases the likelihood of the surface's role in introducing pathogenic or toxigenic agents or other contaminants into FOOD.
 
 **EGG** - means the shell egg of avian species such as chicken, duck, quail, or turkey.
 
 **EGG PRODUCTS** - means all, or a portion of, the contents found inside EGGS separated from the shell and pasteurized in a food processing plant or raised in the PERMIT HOLDER's property, with or without added ingredients, intended for human consumption, such as dried, frozen or liquid EGGS. "Egg Product" does not include FOOD which contains EGGS only in a relatively small proportion such as cake mixes.
 
-**EQUIPMENT** - means an article that is used in the operation of a HOME COOKING OPERATION such as a freezer, hood, ice maker, mixer, oven, reach-in refrigerator, scale, sink, stove, table, TEMPERATURE MEASURING DEVICE for ambient air, or WAREWASHING machine. 
+**EQUIPMENT** - means an article that is used in the operation of a HOME COOKING OPERATION such as a freezer, hood, ice maker, mixer, oven, reach-in refrigerator, scale, sink, stove, table, TEMPERATURE MEASURING DEVICE for ambient air, or WAREWASHING machine.
 
 **EXCLUDE or EXCLUSION** - means to prevent a person from working as a COOK in a HOME COOKING OPERATION or entering a HOME COOKING OPERATION as a COOK until deemed appropriate by the REGULATORY AUTHORITY. 
 
-FISH - means fresh or saltwater finfish, crustaceans, and other forms of aquatic life, other
-
-than birds or mammals, and all molluscan shellfish, if intended for human consumption. “Fish”
-
-also includes alligator, frog, aquatic turtle, jellyfish, sea cucumber, and sea urchin, and the roe
-
-of these animals.
+**FISH** - means fresh or saltwater finfish, crustaceans, and other forms of aquatic life, other than birds or mammals, and all molluscan shellfish, if intended for human consumption. “Fish” also includes alligator, frog, aquatic turtle, jellyfish, sea cucumber, and sea urchin, and the roe of these animals.
 
 **FOOD** - means a raw, cooked, or processed edible substance, ice, BEVERAGE, or ingredient used or intended for use or for sale in whole or in part for human consumption.
 
@@ -66,7 +60,7 @@ of these animals.
 
 **HERMETICALLY SEALED CONTAINERS** - means a container that is designed and intended to be secure against the entry of microorganisms and, in the case of low acid canned FOODS, to maintain the commercial sterility of its contents after processing. 
 
-**HIGHLY SUSCEPTIBLE POPULATION **-  means persons who are more likely than other people in the general population to experience foodborne disease.
+**HIGHLY SUSCEPTIBLE POPULATION** -  means persons who are more likely than other people in the general population to experience foodborne disease.
 
 **HOME** - a private dwelling where one or more persons reside, such as a residential single or multi-family dwelling, an apartment, auxiliary dwelling unit, or a live-work space with permanent residents. HOME does not include an educational institution, residential group home facility, assisted living facility, or health care facility. 
 
