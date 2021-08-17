@@ -1,3 +1,3 @@
 {
-    "allSlugs": ["model-legislation", "model-code/1-definitions", "model-code/2-permitting", "model-code/3-management-and-personnel", "model-code/4-food-safety", "model-code/5-labelling", "model-code/6-equipment", "model-code/7-physical-facilities", "model-code/8-compliance", "model-code/9-local-laws"]
+    "allSlugs": ["model-legislation", "model-code"]
 }

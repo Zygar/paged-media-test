@@ -120,10 +120,20 @@ h2 {
 
 .model-code h1::before {
     content: counter(h1counter) ". ";
+    width: 3em;
+    display: inline-block;
+    margin-left: -3.33em;
+    margin-right: .33em;
+    text-align: right;
 }
 
 .model-code h2::before {
-    content: counter(h1counter)"."counter(h2counter)". ";
+    content: counter(h1counter)"-"counter(h2counter)". ";
+    width: 3em;
+    display: inline-block;
+    text-align: right;
+    margin-left: -3.33em;
+    margin-right: .33em;
 }
 
 .model-code.post>section>ol>li::before {
@@ -136,6 +146,10 @@ h2 {
 
 .model-code.post>section>ol>li>ol>li>ol>li::before {
     content: "("counter(subSubClause, lower-alpha)")";
+}
+
+.model-code.post>section>h2::first-child {
+    counter-set: h2counter 0;
 }
 
 
@@ -358,9 +372,9 @@ h2 {
 }
 
 @page {
-    marks: crop cross;
-    size: A4;
-    margin: 3cm 2.5cm 2.5cm 2.5cm;
+    /* marks: crop cross; */
+    size: letter;
+    margin: 3cm 3.5cm 3.5cm 2.5cm;
     @top-left {
         border-bottom: 1px solid #999;
         content: "Model Legislation";
@@ -390,6 +404,16 @@ h2 {
 }
 
 @media print {
+    /* .tocLink::before {
+        content: 'p ' target-counter(attr(href), page);
+        display: inline-block;
+    } */
+    .toc-wrapper {
+        page-break-after: always;
+    }
+    .post.model-code {
+        page-break-before: page;
+    }
     section {
         widows: 4;
         orphans: 4;

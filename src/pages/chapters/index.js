@@ -309,7 +309,7 @@ export default function Template({
 }
 
 export const allQuery = graphql`
-query allQuery {
+query {
   allMarkdownRemark {
     edges {
       node {
