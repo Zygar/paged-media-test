@@ -373,6 +373,56 @@ h1 {
     string-set: chapter content(text);
 }
 
+.page-intro {
+    break-after: page;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    flex-basis: 25%;
+    margin-right: 2rem;
+}
+
+.logo img {
+    margin-bottom: 0;
+}
+
+.page-intro h1 {
+    break-after: avoid;
+}
+
+.eyebrow {
+    font-weight: bold;
+    font-size: .75rem;
+}
+
+.eyebrow+h1 {
+    margin-top: 0;
+}
+
+.title-name {
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: bold;
+    page: titlePage;
+}
+
+@page titlePage {
+    @top-left {
+        content: none;
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+    @top-right {
+        content: none;
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+}
+
 @page {
     /* marks: crop cross; */
     size: letter;

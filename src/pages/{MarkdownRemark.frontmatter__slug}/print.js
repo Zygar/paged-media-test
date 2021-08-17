@@ -287,6 +287,7 @@ export default function Template({
     console.log(document.body)
   });
   return (
+
     <div className="page-wrapper">
       {/* <div className="blog-post">
         <Link to="/">Go home</Link>

@@ -12,6 +12,7 @@ export default function Template({
   return (
     <div className="blog-post-container" >
       <div className="blog-post">
+
         <main>
 
           {
