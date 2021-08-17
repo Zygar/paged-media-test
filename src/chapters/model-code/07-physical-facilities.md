@@ -9,9 +9,9 @@ numberingStart: 7
 # Physical Facilities: Water, Plumbing, Waste, Prohibiting Animals
 
 
-## Water[^1]
+## Water
 
-1. Drinking water shall be obtained from an APPROVED source that is:
+1. Drinking water[^1] shall be obtained from an APPROVED source that is:
     1. A public water system that meets federal and state drinking water quality standards; or
     2. A nonpublic water system, such as a home well, that is constructed, maintained, and operated according to LAW; or
     3. A source that has been tested and meets state standards, such as a water transport vehicle or water container; or

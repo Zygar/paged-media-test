@@ -58,8 +58,12 @@ ol {
     counter-reset: subClause;
 }
 
-.post>section>ol>li>ol>li {
+.post>section>ol>li>ol>li>ol {
     counter-reset: subSubClause;
+}
+
+.post>section>ol>li>ol>li>ol>li>ol {
+    counter-reset: subSubSubClause;
 }
 
 li::before {
@@ -95,6 +99,10 @@ li::before {
 
 .post>section>ol>li>ol>li>ol>li {
     counter-increment: subSubClause;
+}
+
+.post>section>ol>li>ol>li>ol>li>ol>li {
+    counter-increment: subSubSubClause;
 }
 
 .post>section>ol>li>ol>li>ol>li::before {
@@ -148,6 +156,10 @@ h2 {
 
 .model-code.post>section>ol>li>ol>li>ol>li::before {
     content: "("counter(subSubClause, lower-alpha)")";
+}
+
+.model-code.post>section>ol>li>ol>li>ol>li>ol>li::before {
+    content: "("counter(subSubSubClause, lower-roman)")";
 }
 
 .model-code.post>section>h2::first-child {
