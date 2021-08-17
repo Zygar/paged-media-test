@@ -10,6 +10,7 @@ const typography = new Typography(
         bodyFontFamily: ["Tiempos-Text"],
         overrideStyles: ({ rhythm, scale }, options) => {
             return {
+                h1: { marginTop: rhythm(4) },
                 h2: {
                     marginTop: rhythm(2)
                 },
@@ -33,7 +34,8 @@ const typography = new Typography(
                     fontSize: "8pt"
                 },
                 '.sidenote': {
-                    fontSize: '7pt'
+                    fontSize: '7pt',
+                    lineHeight: 1.61
                 },
 
                 "@media only print": {

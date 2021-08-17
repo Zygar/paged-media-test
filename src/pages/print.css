@@ -67,8 +67,10 @@ li::before {
     font-weight: bold;
     overflow: hidden;
     display: block;
-    width: 1.61rem;
-    margin-left: -1.61rem;
+    width: 2.0125rem;
+    margin-left: -2.415rem;
+    margin-right: 0.4025rem;
+    text-align: right;
     color: #888;
     white-space: nowrap;
 }
@@ -105,6 +107,11 @@ li::before {
 
 h2::before {
     content: counter(h2counter) ". ";
+    width: 3em;
+    display: inline-block;
+    text-align: right;
+    margin-left: -3.33em;
+    margin-right: .33em;
 }
 
 h2 {
@@ -129,11 +136,6 @@ h2 {
 
 .model-code h2::before {
     content: counter(h1counter)"-"counter(h2counter)". ";
-    width: 3em;
-    display: inline-block;
-    text-align: right;
-    margin-left: -3.33em;
-    margin-right: .33em;
 }
 
 .model-code.post>section>ol>li::before {
@@ -227,8 +229,8 @@ li[data-split-from]::marker {
 
 .sidenote {
     padding-bottom: 1.61rem;
-    font-family: system-ui;
     color: #ff6e61;
+    font-weight: normal;
 }
 
 h2 {
@@ -367,17 +369,17 @@ h2 {
     border-radius: 4px;
 }
 
-h2 {
-    string-set: chapter content(text)
+h1 {
+    string-set: chapter content(text);
 }
 
 @page {
     /* marks: crop cross; */
     size: letter;
-    margin: 3cm 3.5cm 3.5cm 2.5cm;
+    margin: 3cm 3.5cm 3cm 3.5cm;
     @top-left {
         border-bottom: 1px solid #999;
-        content: "Model Legislation";
+        content: "COOK Alliance";
         letter-spacing: 0.05em;
         margin-bottom: .75cm;
         color: #999;
@@ -388,6 +390,8 @@ h2 {
     }
     @top-right {
         content: string(chapter) " • " counter(page);
+        text-overflow: ellipsis;
+        white-space: nowrap;
         min-width: 5cm;
         color: #999;
         text-transform: uppercase;
@@ -403,17 +407,12 @@ h2 {
     /* margin-left: auto */
 }
 
+h1 {
+    page-break-before: page;
+    break-before: always;
+}
+
 @media print {
-    /* .tocLink::before {
-        content: 'p ' target-counter(attr(href), page);
-        display: inline-block;
-    } */
-    .toc-wrapper {
-        page-break-after: always;
-    }
-    .post.model-code {
-        page-break-before: page;
-    }
     section {
         widows: 4;
         orphans: 4;
@@ -430,26 +429,21 @@ h2 {
     h3,
     h4 {
         page-break-after: avoid;
-        /* column-break-inside: avoid; */
-        /* break-inside: avoid; */
+        break-after: avoid;
+        break-inside: avoid;
+    }
+    h2+p {
+        break-after: avoid;
+        page-break-after: avoid;
     }
     h2+p,
     h2+ol {
-        /* page-break-after: avoid; */
-        /* break-inside: avoid; */
-        widows: 4;
-        orphans: 4;
+        widows: 3;
+        orphans: 3;
     }
-    h2+ol li:first-child {
-        /* break-inside: avoid; */
-    }
-    h2+ol li:first-child ol {
-        /* break-inside: auto; */
-    }
-    li {
-        /* break-inside: avoid; */
-    }
-    .post {
-        /* column-count: 2 */
+    li,
+    p {
+        widows: 3;
+        orphans: 3;
     }
 }

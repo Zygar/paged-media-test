@@ -3,6 +3,7 @@ slug: "model-legislation"
 title: "Model Legislation"
 author: "COOK Alliance"
 ---
+# Model Legislation
 
 ## Definitions
 

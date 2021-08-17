@@ -6,11 +6,11 @@ theme: "model-code"
 numberingStart: 1
 ---
 
-# Definitions [^1]
+# Definitions
 
 
 ## Statement of Application and Listing of Terms
-The following definitions shall apply in the interpretation and application of this Code.
+The following definitions[^1] shall apply in the interpretation and application of this Code.
 
 **ACCREDITED PROGRAM** - means a food protection manager certification program or food handler program that has been evaluated and listed by an accrediting agency as conforming to national or state standards for organizations that certify individuals.
 
