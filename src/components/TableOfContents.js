@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { Link, StaticQuery, graphql } from "gatsby"
+var GithubSlugger = require('github-slugger')
 
 const TocWrapper = styled.ol`
   background-color:#eee;
@@ -14,10 +15,11 @@ const TocWrapper = styled.ol`
 
 function TableOfContents(props) {
     const headings = props.headings
+    const slugger = new GithubSlugger()
     return (
         <TocWrapper>
             {headings.map(heading => (
-                <li>{heading}</li>
+                <li><a href={`#${slugger.slug(heading)}`}>{heading}</a></li>
             ))}
         </TocWrapper>
     )
