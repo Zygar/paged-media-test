@@ -7,6 +7,7 @@ import ArticleBody from "../components/articleBody"
 import styled from "styled-components"
 import TableOfContents from "../components/TableOfContents"
 
+// ABSTRACT ME OUT
 const DocumentBody = styled.section`
   display: flex;
   align-items: flex-start;

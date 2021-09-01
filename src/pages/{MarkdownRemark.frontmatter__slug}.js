@@ -1,30 +1,60 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { Link } from "gatsby"
+import Layout from "../components/layout"
 import "./print.css"
+import ArticleBody from "../components/articleBody"
+import styled from "styled-components"
+import TableOfContents from "../components/TableOfContents"
+
+// ABSTRACT ME OUT
+// ABSTRACT ME OUT
+const DocumentBody = styled.section`
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+`
+const Sidebar = styled.aside`
+  flex-basis: 15em;
+  position: sticky;
+  align-self: flex-start;
+  top: 64px;
+  margin-right: 4rem;
+  font-size: 0.8rem;
+  min-width: 240px;
+  margin-top: 6.44rem; //remove me later 
+`
+
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
   const { markdownRemark } = data // data.markdownRemark holds your post data
-  const { frontmatter, html } = markdownRemark
+  const { frontmatter, html, headings } = markdownRemark
+  const allSectionHeadings = headings.map((heading) => {
+    return heading.value;
+  })
   return (
-    <div className="blog-post-container">
-      <div className="blog-post">
-        <div className='hide-on-print' style={{ marginBottom: "1.5em", borderBottom: "1px solid #999" }}>
-          <nav>
-            <Link to="/">← Go home</Link><br />
-            <Link to={`/${frontmatter.slug}.pdf`}>Download PDF</Link> • <Link to={`/${frontmatter.slug}/print`}>Printer friendly</Link>
-          </nav>
-        </div>
-        {/* <h1>{frontmatter.title}</h1>
-                <p>{frontmatter.author}</p> */}
-        <article
-          className={`post ${frontmatter.theme}`}
-          style={{ counterSet: `h1counter ${frontmatter.numberingStart}` }}
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
-      </div>
-    </div >
+    <Layout>
+      <section>
+        <h1>Model Legislation</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a faucibus metus. Morbi fermentum turpis ac sem porttitor ornare. Ut est mi, dictum et ultricies vel, accumsan id elit.  </p>
+      </section>
+      <DocumentBody>
+        <Sidebar>
+          <TableOfContents headings={allSectionHeadings}
+          />
+        </Sidebar>
+        <main>
+          <ArticleBody
+            html={html}
+            numberingStart="1"
+            theme={frontmatter.theme}
+          />
+        }
+        </main>
+      </DocumentBody>
+
+    </Layout>
   )
 }
 
@@ -32,6 +62,10 @@ export const pageQuery = graphql`
   query($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
+      headings(depth: h2) {
+        depth
+        value
+      }
       frontmatter {
         slug
         title
