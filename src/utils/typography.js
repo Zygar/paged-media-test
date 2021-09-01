@@ -47,5 +47,5 @@ const typography = new Typography(
         }
     }
 )
-
+const { scale, rhythm } = typography;
 export default typography

@@ -11,6 +11,8 @@ module.exports = {
         author: `@zygar`
     },
     plugins: [{
+        resolve: `gatsby-plugin-styled-components`
+    }, {
         resolve: `gatsby-source-filesystem`,
         options: {
             name: `chapters`,
