@@ -7,11 +7,20 @@ const TocWrapper = styled.ol`
   background-color:#eee;
   border: 1px solid #ddd;
   padding: 1rem;
+  counter-reset: tocCounter;
   @media print {
       break-after: always;
       background-color: transparent;
   }
 `
+const TocItem = styled.li`
+    counter-increment: tocCounter;
+    &:before {
+        content: counter(tocCounter);
+        display: inline-block;
+    }
+`
+
 
 function TableOfContents(props) {
     const headings = props.headings
@@ -19,7 +28,7 @@ function TableOfContents(props) {
     return (
         <TocWrapper>
             {headings.map(heading => (
-                <li><a href={`#${slugger.slug(heading)}`}>{heading}</a></li>
+                <TocItem><a href={`#${slugger.slug(heading)}`}>{heading}</a></TocItem>
             ))}
         </TocWrapper>
     )
