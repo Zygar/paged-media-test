@@ -7,6 +7,21 @@ import ArticleBody from "../components/articleBody"
 import styled from "styled-components"
 import TableOfContents from "../components/TableOfContents"
 
+const DocumentBody = styled.section`
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+`
+const Sidebar = styled.aside`
+  flex-basis: 15em;
+  position: sticky;
+  align-self: flex-start;
+  top: 64px;
+  margin-right: 4rem;
+  font-size: 0.8rem;
+  min-width: 240px;
+  margin-top: 6.44rem; //remove me later 
+`
 
 export default function Template({ data }) {
 
@@ -22,12 +37,11 @@ export default function Template({ data }) {
         <h1>Model Code</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a faucibus metus. Morbi fermentum turpis ac sem porttitor ornare. Ut est mi, dictum et ultricies vel, accumsan id elit.  </p>
       </section>
-      <section>
-        <aside>
+      <DocumentBody>
+        <Sidebar>
           <TableOfContents headings={allSectionHeadings}
-
           />
-        </aside>
+        </Sidebar>
         <main>
           {
             allModelCode.map(edge => (
@@ -40,7 +54,7 @@ export default function Template({ data }) {
             ))
           }
         </main>
-      </section>
+      </DocumentBody>
 
     </Layout>
   )
