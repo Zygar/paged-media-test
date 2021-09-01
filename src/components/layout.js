@@ -54,7 +54,10 @@ export default function Layout({ children }) {
                     </NavLinks>
                 </Nav>
             </Header>
-            {children}
+            <main>
+                {children}
+            </main>
+
         </Container>
     )
 }

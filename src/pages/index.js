@@ -25,20 +25,26 @@ export default function Home({
   },
 }) {
   return <Layout>
-    <h1>Table of contents</h1>
-    {
-      edges.map(edge => (
-        <Chapter key={edge.node.id}>
-          <ChapterHeading>
-            <Link to={`/${edge.node.frontmatter.slug}`}>{edge.node.frontmatter.title}</Link>
-          </ChapterHeading>
-          <div>
-            <small style={{ fontSize: `11px` }}><Link to={`/${edge.node.frontmatter.slug}.pdf`}>Download PDF</Link> • <Link to={`/${edge.node.frontmatter.slug}/print`}>Printer friendly</Link> </small>
-          </div>
+    <section>
+      <h1>Home Cooking Equity Framework</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a faucibus metus. Morbi fermentum turpis ac sem porttitor ornare. Ut est mi, dictum et ultricies vel, accumsan id elit. </p>
+    </section>
+    <section>
+      <h2>Table of contents</h2>
+      {
+        edges.map(edge => (
+          <Chapter key={edge.node.id}>
+            <ChapterHeading>
+              <Link to={`/${edge.node.frontmatter.slug}`}>{edge.node.frontmatter.title}</Link>
+            </ChapterHeading>
+            <div>
+              <small style={{ fontSize: `11px` }}><Link to={`/${edge.node.frontmatter.slug}.pdf`}>Download PDF</Link> • <Link to={`/${edge.node.frontmatter.slug}/print`}>Printer friendly</Link> </small>
+            </div>
 
-        </Chapter>
-      ))
-    }
+          </Chapter>
+        ))
+      }
+    </section>
   </Layout>
 }
 

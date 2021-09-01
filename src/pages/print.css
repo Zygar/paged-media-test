@@ -113,7 +113,7 @@ li::before {
     counter-reset: h2counter;
 }
 
-h2::before {
+.post h2::before {
     content: counter(h2counter) ". ";
     width: 3em;
     display: inline-block;
@@ -122,7 +122,7 @@ h2::before {
     margin-right: .33em;
 }
 
-h2 {
+.post h2 {
     counter-increment: h2counter;
 }
 
@@ -245,7 +245,7 @@ li[data-split-from]::marker {
     font-weight: normal;
 }
 
-h2 {
+.post h2 {
     color: #ff6e61
 }
 
