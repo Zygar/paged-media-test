@@ -385,6 +385,12 @@ h1 {
     string-set: chapter content(text);
 }
 
+h1 {
+    background-color: #ff6e61;
+    color: #fff;
+    padding-top: 4em;
+}
+
 .page-intro {
     break-after: page;
     display: flex;

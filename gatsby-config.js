@@ -6,7 +6,7 @@
 
 module.exports = {
     siteMetadata: {
-        title: `The Great Booksby`,
+        title: `Home Cooking Framework`,
         description: `Using Gatsby to write once, publish anywhere.`,
         author: `@zygar`,
         menuLinks: [
@@ -49,7 +49,9 @@ module.exports = {
         options: {
             pathToConfigModule: `src/utils/typography`
         }
-    },
+    }, `gatsby-plugin-image`,
+        `gatsby-plugin-sharp`,
+        `gatsby-transformer-sharp`,
 
     ]
 }

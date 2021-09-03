@@ -17,6 +17,8 @@
     "dependencies": {
         "babel-plugin-styled-components": "^1.13.2",
         "gatsby": "^3.10.2",
+        "gatsby-plugin-image": "^1.13.0",
+        "gatsby-plugin-sharp": "^3.13.0",
         "gatsby-plugin-styled-components": "^4.13.0",
         "gatsby-plugin-typography": "^3.10.0",
         "gatsby-plugin-web-font-loader": "^1.0.4",
@@ -25,6 +27,7 @@
         "gatsby-remark-tufte": "Zygar/gatsby-remark-tufte",
         "gatsby-source-filesystem": "^3.10.0",
         "gatsby-transformer-remark": "^4.7.0",
+        "gatsby-transformer-sharp": "^3.13.0",
         "github-slugger": "^1.4.0",
         "pagedjs": "^0.2.0",
         "pagedjs-cli": "^0.1.3",

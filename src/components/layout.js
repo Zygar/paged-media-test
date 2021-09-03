@@ -3,26 +3,19 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 import Navigation from "../../Navigation"
 import { useSiteMetadata } from "../hooks/site-metadata"
+import { Logo } from "./logo"
 
 const Container = styled.div`
   margin: 0 auto;
 `
 
 const Header = styled.header`
-   display:flex;
+   display:grid;
    border-bottom: 1px solid #333;
    align-items: center;
    justify-content: space-between;
-`
-
-const Logo = styled.a`
-   display: block;
-   width: 240px;
-   height: 100px;
-   position: relative;
-   text-align:center;
-   line-height: 100px;
-   background-color:#eee;
+   grid-template-columns: minmax(220px, 420px) 1fr;
+   grid-template-rows: 1fr;
 `
 
 const Nav = styled.nav`
@@ -35,7 +28,11 @@ const NavLinks = styled.ul`
     padding: 0;
     margin: 0;  
 `
+const Title = styled.div`
+  display:flex; 
+  justify-content: center;
 
+`
 const NavLink = styled.li`
     margin:0;
     padding:0;
@@ -49,15 +46,15 @@ export default function Layout({ children }) {
     return (
         <Container>
             <Header>
-                <Logo>{title}</Logo>
+                <Logo></Logo>
                 <Navigation menuLinks={menuLinks} />
-                <Nav>
+                {/* <Nav>
                     <NavLinks>
                         <NavLink><Link to="/">Home</Link></NavLink>
                         <NavLink><Link to="/model-legislation">Model Legislation</Link></NavLink>
                         <NavLink><Link to="/model-code">Model Code</Link></NavLink>
                     </NavLinks>
-                </Nav>
+                </Nav> */}
             </Header>
             <main>
                 {children}
