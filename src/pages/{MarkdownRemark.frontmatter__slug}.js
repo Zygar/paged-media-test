@@ -33,27 +33,25 @@ export default function Template({
   const allSectionHeadings = headings.map((heading) => {
     return heading.value;
   })
+  console.log(allSectionHeadings)
   return (
     <Layout>
-      <section>
-        <h1>Model Legislation</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a faucibus metus. Morbi fermentum turpis ac sem porttitor ornare. Ut est mi, dictum et ultricies vel, accumsan id elit.  </p>
-      </section>
       <DocumentBody>
-        <Sidebar>
+        {allSectionHeadings.length > 0 && <Sidebar>
           <TableOfContents headings={allSectionHeadings}
           />
-        </Sidebar>
+        </Sidebar>}
+
         <main>
           <ArticleBody
             html={html}
             numberingStart="1"
             theme={frontmatter.theme}
           />
-        }
+
         </main>
       </DocumentBody>
-
+      <Link to={frontmatter.next}>Next</Link>
     </Layout>
   )
 }
@@ -72,6 +70,8 @@ export const pageQuery = graphql`
         author
         theme
         numberingStart
+        next
+        prev
       }
     }
   }

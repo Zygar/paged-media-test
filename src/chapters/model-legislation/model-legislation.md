@@ -2,6 +2,8 @@
 slug: "model-legislation"
 title: "Model Legislation"
 author: "COOK Alliance"
+next: "/model-code"
+prev: "/acknowledgements"
 ---
 # Model Legislation
 
