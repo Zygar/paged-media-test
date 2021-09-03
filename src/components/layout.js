@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
+import Navigation from "../../Navigation"
 
 const Container = styled.div`
   margin: 0 auto;
@@ -46,6 +47,7 @@ export default function Layout({ children }) {
         <Container>
             <Header>
                 <Logo>Logo</Logo>
+                <Navigation />
                 <Nav>
                     <NavLinks>
                         <NavLink><Link to="/">Home</Link></NavLink>
