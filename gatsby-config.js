@@ -8,7 +8,21 @@ module.exports = {
     siteMetadata: {
         title: `The Great Booksby`,
         description: `Using Gatsby to write once, publish anywhere.`,
-        author: `@zygar`
+        author: `@zygar`,
+        menuLinks: [
+            {
+                name: "Home",
+                link: "/"
+            },
+            {
+                name: "Model Code",
+                link: "/model-code"
+            },
+            {
+                name: "Model Legislation",
+                link: "/model-legislation"
+            }
+        ]
     },
     plugins: [{
         resolve: `gatsby-plugin-styled-components`

@@ -4,14 +4,14 @@ import Menu from "./src/components/menu"
 
 class Navigation extends React.Component {
 
-    render() {
+    render(props) {
         return (
             <>
                 <button onClick={() => this.toggleMenu()}>
                     Open Menu
                 </button>
 
-                <Menu ref={el => (this.childMenu = el)} />
+                <Menu menuLinks={this.props.menuLinks} ref={el => (this.childMenu = el)} />
             </>
         )
     }

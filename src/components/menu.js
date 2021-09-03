@@ -3,6 +3,7 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 
 
+
 const MenuWrapper = styled.div`
     position: fixed;
     top: 0;
@@ -41,7 +42,7 @@ class Menu extends React.Component {
         }
     }
 
-    render() {
+    render(props) {
         return (
             <MenuWrapper
                 role="button"
@@ -49,12 +50,12 @@ class Menu extends React.Component {
                 className={`${this.state.open ? `open` : ""}`}
                 onClick={() => this.close()}
                 onKeyDown={() => this.close()}
-            >
-                <Link to="/"><h1>Home</h1></Link>
-                <Link to="/#portfolio"><h1>Portfolio</h1></Link>
-                <Link to="/#about"><h1>About</h1></Link>
-                <Link to="/blog"><h1>Blog</h1></Link>
-                <Link to="/#contact"><h1>Contact</h1></Link>
+            >  {
+                    this.props.menuLinks.map(menuItem => (
+                        <Link to={menuItem.link}>{menuItem.name}</Link>
+                    )
+
+                    )}
             </MenuWrapper>
         )
     }

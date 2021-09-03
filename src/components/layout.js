@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 import Navigation from "../../Navigation"
+import { useSiteMetadata } from "../hooks/site-metadata"
 
 const Container = styled.div`
   margin: 0 auto;
@@ -43,11 +44,13 @@ const NavLink = styled.li`
 `
 
 export default function Layout({ children }) {
+    const { title, menuLinks } = useSiteMetadata();
+    console.log(menuLinks)
     return (
         <Container>
             <Header>
-                <Logo>Logo</Logo>
-                <Navigation />
+                <Logo>{title}</Logo>
+                <Navigation menuLinks={menuLinks} />
                 <Nav>
                     <NavLinks>
                         <NavLink><Link to="/">Home</Link></NavLink>
