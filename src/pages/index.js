@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import styled from "styled-components"
 import IndexToc from "../components/IndexToc"
 import Container from "../components/Box"
-
+import SEO from "../components/seo"
 const Chapter = styled.div`
   display: grid;
   /* align-items: flex-end;
@@ -77,13 +77,23 @@ export default function Home({ data }) {
   const modelLegHeadings = allLegislationHeadings.map((heading) => {
     return heading.value;
   })
-  console.log(modelLegHeadings)
   const modelCodeHeadings = allModelCode.map((edge) => {
     return edge.node.headings[0].value;
   })
 
-  console.log(modelCodeHeadings)
-  return <Layout>
+  const pageTitle = "Home Cooking Policy Framework"
+  const nextPage = {
+    title: "Model Code",
+    slug: "/model-code"
+  }
+
+  const prevPage = {
+    title: null,
+    slug: null
+  }
+
+  return <Layout title={pageTitle} next={nextPage} prev={prevPage}>
+
     <Hero>
       <Container>
 

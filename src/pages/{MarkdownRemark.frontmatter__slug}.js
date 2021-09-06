@@ -33,15 +33,24 @@ export default function Template({
   const allSectionHeadings = headings.map((heading) => {
     return heading.value;
   })
-  console.log(allSectionHeadings)
+
+  const nextPage = {
+    title: frontmatter.nextTitle || null,
+    slug: frontmatter.nextSlug || null
+  }
+
+  const prevPage = {
+    title: frontmatter.nextTitle || null,
+    slug: frontmatter.nextSlug || null
+  }
+
   return (
-    <Layout>
+    <Layout title={frontmatter.title} next={nextPage}>
       <DocumentBody>
         {allSectionHeadings.length > 0 && <Sidebar>
           <TableOfContents headings={allSectionHeadings}
           />
         </Sidebar>}
-
         <main>
           <ArticleBody
             html={html}
@@ -51,7 +60,7 @@ export default function Template({
 
         </main>
       </DocumentBody>
-      <Link to={frontmatter.next}>Next</Link>
+      {/* <Link to={frontmatter.next.nextTitle}>Next</Link> */}
     </Layout>
   )
 }
@@ -70,8 +79,14 @@ export const pageQuery = graphql`
         author
         theme
         numberingStart
-        next
-        prev
+        
+        nextTitle
+        nextSlug
+       
+        
+        prevTitle
+        prevSlug         
+         
       }
     }
   }

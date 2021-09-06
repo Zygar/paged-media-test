@@ -6,9 +6,14 @@
 
 module.exports = {
     siteMetadata: {
-        title: `Home Cooking Framework`,
-        description: `Using Gatsby to write once, publish anywhere.`,
-        author: `@zygar`,
+        title: "Home Cooking Framework",
+        titleTemplate: "%s · COOK Alliance",
+        description:
+            "A framework for legalizing and regulating home cooking businesses.",
+        url: "https://policy.cookalliance.org", // No trailing slash allowed!
+        image: "/images/social-sharing.jpg", // Path to your image you placed in the 'static' folder
+        twitterUsername: "@AllianceCook",
+        author: `COOK Alliance`,
         menuLinks: [
             {
                 name: "Home",
@@ -52,6 +57,7 @@ module.exports = {
     }, `gatsby-plugin-image`,
         `gatsby-plugin-sharp`,
         `gatsby-transformer-sharp`,
+        `gatsby-plugin-react-helmet`
 
     ]
 }

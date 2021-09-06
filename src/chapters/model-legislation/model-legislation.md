@@ -2,8 +2,10 @@
 slug: "model-legislation"
 title: "Model Legislation"
 author: "COOK Alliance"
-next: "/model-code"
-prev: "/acknowledgements"
+nextTitle: "Model Code"
+nextSlug: "/model-code"
+prevTitle: "Introduction"
+prevSlug: "/introduction"
 ---
 # Model Legislation
 
@@ -69,7 +71,7 @@ prev: "/acknowledgements"
 3. All required information appearing in a foreign language on a menu, label, or in advertising or marketing must also be provided in English. Numeric characters that are identical in both languages do not have to be repeated.
 
 
-## ONLINE FOOD MARKETPLACE
+## Online Food Marketplace
 
 An ONLINE FOOD MARKETPLACE that lists or promotes a HOME COOKING OPERATION on its internet website or mobile application shall meet all of the following requirements:
 
@@ -88,7 +90,7 @@ An ONLINE FOOD MARKETPLACE that lists or promotes a HOME COOKING OPERATION on it
 13. Before allowing a HOME COOKING OPERATION to use its services, obtain consent from the HOME COOKING OPERATION to make the disclosures to government entities required under this section.
 
 
-## THIRD-PARTY DELIVERY SERVICE
+## Third-Party Delivery Service
 
 A THIRD-PARTY DELIVERY SERVICE that delivers HOME COOKING OPERATION food must:
 
