@@ -263,10 +263,10 @@ li[data-split-from]::marker {
     body {
         margin-left: auto;
         margin-right: auto;
-        max-width: 1200px;
+        /* max-width: 1200px; */
         counter-reset: sidenote-counter;
-        padding-left: 32px;
-        padding-right: 32px;
+        /* padding-left: 32px;
+        padding-right: 32px; */
     }
     .sidenote,
     .marginnote {
@@ -386,7 +386,7 @@ h1 {
 }
 
 h1 {
-    background-color: #ff6e61;
+    /* background-color: #ff6e61; */
     color: #fff;
     padding-top: 4em;
 }

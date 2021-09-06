@@ -11,6 +11,8 @@ const LogoWrapper = styled(props => <Link {...props} />)`
    color: unset;
    font-weight: bold;
    line-height: 1.25;
+   position: relative;
+   margin-bottom: -2.5em;
 `
 
 const ImageWrapper = styled.div`
@@ -33,7 +35,7 @@ export function Logo() {
                 height={200}
                 objectFit="contain" />
         </ImageWrapper>
-        <SiteTitle>{title}</SiteTitle>
+        {/* <SiteTitle>{title}</SiteTitle> */}
     </LogoWrapper>
 
 

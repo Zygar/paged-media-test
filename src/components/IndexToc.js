@@ -10,7 +10,7 @@ const TocWrapper = styled.ol`
   font-size: 0.8rem;
   counter-reset: tocCounter;
   display: grid;
-  grid-template-columns: 33.33% 33.33% 33.33%;
+  grid-template-columns: 50% 50% ;
   grid-template-rows: min-content min-content min-content;
 `
 const TocItem = styled.li`

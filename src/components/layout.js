@@ -4,20 +4,26 @@ import { Link } from "gatsby"
 import Navigation from "./Navigation"
 import { useSiteMetadata } from "../hooks/site-metadata"
 import { Logo } from "./logo"
+import Box from "./Box"
 
 const Container = styled.div`
   margin: 0 auto;
 `
 
 const Header = styled.header`
-   display:grid;
    border-bottom: 1px solid #333;
-   align-items: center;
-   justify-content: space-between;
-   grid-template-columns: minmax(220px, 420px) 1fr;
-   grid-template-rows: 1fr;  
+   background-color: #fff;
+   position: sticky;
+   width: 100%;
+   top: 0;
 `
-
+const HeaderGrid = styled.div`
+    display:grid;
+    align-items: center;
+    justify-content: space-between;
+    grid-template-columns: minmax(120px, 320px) 1fr min-content;
+    grid-template-rows: 1fr;  
+`
 const Nav = styled.nav`
     font-size: 1rem;
 `
@@ -39,26 +45,32 @@ const NavLink = styled.li`
     font-size: 14px;
     margin-left: 14px;
 `
-
+const Footer = styled.footer`
+    background-color: #585A67;
+    min-height: 150px;
+`
 export default function Layout({ children }) {
     const { title, menuLinks } = useSiteMetadata();
     console.log(menuLinks)
     return (
         <Container>
             <Header>
-                <Logo></Logo>
-                <Navigation menuLinks={menuLinks} />
-                {/* <Nav>
-                    <NavLinks>
-                        <NavLink><Link to="/">Home</Link></NavLink>
-                        <NavLink><Link to="/model-legislation">Model Legislation</Link></NavLink>
-                        <NavLink><Link to="/model-code">Model Code</Link></NavLink>
-                    </NavLinks>
-                </Nav> */}
+                <Box>
+                    <HeaderGrid>
+                        <Logo></Logo>
+                        <p>Title</p>
+                        <Navigation menuLinks={menuLinks} />
+                    </HeaderGrid>
+                </Box>
             </Header>
+
             <main>
                 {children}
             </main>
+
+            <Footer>
+
+            </Footer>
 
         </Container>
     )

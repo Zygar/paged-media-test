@@ -23,6 +23,8 @@ const NavButton = styled.button`
   line-height:1;
   cursor: pointer;
   transition: all 0.1s ease-in-out;
+  white-space: nowrap;
+  padding: 0 2rem;
   &:hover {
     background: #cb5b6c;
   }
@@ -35,11 +37,13 @@ const SizedBurger = styled.div`
    margin-left: 1em;
 `
 
+
 class Navigation extends React.Component {
 
     render(props) {
         return (
             <>
+
                 <NavButton onClick={() => this.toggleMenu()}>
                     All Chapters
                     <SizedBurger>
