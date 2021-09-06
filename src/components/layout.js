@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
-import Navigation from "../../Navigation"
+import Navigation from "./Navigation"
 import { useSiteMetadata } from "../hooks/site-metadata"
 import { Logo } from "./logo"
 
@@ -15,7 +15,7 @@ const Header = styled.header`
    align-items: center;
    justify-content: space-between;
    grid-template-columns: minmax(220px, 420px) 1fr;
-   grid-template-rows: 1fr;
+   grid-template-rows: 1fr;  
 `
 
 const Nav = styled.nav`
