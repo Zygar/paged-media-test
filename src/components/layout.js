@@ -19,16 +19,19 @@ const Header = styled.header`
    width: 100%;
    top: 0;
    z-index: 5;
-   padding-top: .5rem;
-   padding-bottom: 0;
+   padding-top: 1rem;
+   padding-bottom: 1rem;
+   ${bp.tablet} {
+       padding: .5rem 0 .5rem 0;
+   }
 `
 const HeaderGrid = styled.div`
     display:grid;
     align-items: center;
     justify-content: space-between;
     grid-template-columns: 1fr min-content;
-    grid-template-rows: 1fr;  
-    margin-bottom:-1em;
+    grid-template-rows: minmax(4rem, 4rem);  
+    /* margin-bottom:-1em; */
     ${bp.mobile} {
         margin-bottom:0;
     }
@@ -63,7 +66,6 @@ const Footer = styled.footer`
 const PageTitleWrapper = styled.div`
   display:flex;
   flex-direction:column;
-  padding-right: 1em;
 `
 
 const PageTitle = styled.span`
@@ -83,18 +85,21 @@ const PageTitle = styled.span`
 const TitleWrapper = styled.div`
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: stretch;
 `
 
 const LogoWrapper = styled.div`
-  max-width: 8.6rem;
+  min-width: 140px;
+  flex-basis: 140px;
   margin-right: 1em;
   position: relative;
   ${bp.tablet} {
-    max-width: 6.6rem
+    min-width: 100px;
+    flex-basis: 100px;
  }
   ${bp.mobile} {
-      max-width: 5rem;
+      min-width: 80px;
+      flex-basis: 80px;
   }
 `
 

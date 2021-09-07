@@ -12,14 +12,11 @@ const LogoWrapper = styled(props => <Link {...props} />)`
    color: unset;
    font-weight: bold;
    line-height: 1.25;
-   position: relative;
+   position: absolute;
+   top:-1em;
+   left:0;
 `
 
-const ImageWrapper = styled.div`
-   flex-basis: 6rem;
-   min-width: 6rem;
-   
-`
 
 const SiteTitle = styled.span`
     font-size: 1.25em;
