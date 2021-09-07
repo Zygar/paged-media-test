@@ -12,10 +12,14 @@ const Hero = styled.div`
 const Heading = styled.h1`
   margin:0;
   padding:0;
+  font-size: 2.83rem;
 `
 
 const HeroBox = styled.div`
   max-width: 50%;
+  ${bp.medium} {
+    max-width: 75%;
+  }
   ${bp.tablet} {
     max-width: unset;
   }

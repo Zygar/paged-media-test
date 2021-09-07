@@ -16,21 +16,24 @@ const DocumentBody = styled.section`
   align-items: flex-start;
   position: relative;
   margin-top: 4em;
-  ${bp.mobile} {
+  ${bp.medium} {
     position: unset;
     flex-direction: column;
+    justify-content: stretch;
   }
 `
 const Sidebar = styled.aside`
   flex-basis: 15em;
   position: sticky;
   align-self: flex-start;
-  top: 64px;
+  top: 120px;
   margin-right: 4rem;
   font-size: 0.8rem;
   min-width: 240px;
-  ${bp.mobile} {
+  ${bp.medium} {
     position: unset;
+    width: 100%;
+    margin-bottom: 4em;
   }
 `
 

@@ -28,10 +28,10 @@ const typography = new Typography(
                 'li::before': {
                     width: rhythm(1),
                     marginLeft: `-${rhythm(1)}`,
-                    display: 'block',
-                    float: 'left',
+                    display: 'inline-block',
                     lineHeight: rhythm(1),
-                    fontSize: "8pt"
+                    fontSize: "8pt",
+                    verticalAlign: "middle"
                 },
                 '.sidenote': {
                     fontSize: '10pt',
