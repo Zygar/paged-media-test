@@ -46,7 +46,11 @@ module.exports = {
             // GitHub Flavored Markdown mode (default: true)
             gfm: true,
             // Plugins configs
-            plugins: [`gatsby-remark-autolink-headers`, `gatsby-remark-tufte`],
+            plugins: [{
+                resolve: `gatsby-remark-autolink-headers`, options: {
+                    icon: false
+                }
+            }, `gatsby-remark-tufte`],
         },
     },
     {
