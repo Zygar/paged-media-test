@@ -4,7 +4,7 @@ title: "Acknowledgements"
 author: "COOK Alliance"
 nextTitle: "Model Legislation"
 nextSlug: "/model-legislation"
-prevTitle: "Table of Contents"
+prevTitle: "Home"
 prevSlug: "/"
 ---
 

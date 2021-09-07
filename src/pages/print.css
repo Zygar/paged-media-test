@@ -117,10 +117,6 @@ li::before {
     content: "("counter(subSubClause, lower-roman)")";
 }
 
-.post {
-    counter-reset: h2counter;
-}
-
 .post h2::before {
     content: counter(h2counter) ". ";
     width: 3em;
@@ -340,6 +336,20 @@ li[data-split-from]::marker {
     }
 }
 
+.post {
+    margin-bottom: 10rem;
+}
+
+.post section h1 {
+    padding-top: 150px;
+    margin-top: -150px;
+}
+
+.post section h2 {
+    padding-top: 150px;
+    margin-top: calc(3.22rem - 150px);
+}
+
 @keyframes bob {
     0% {
         transform: translateY(-2px);
@@ -364,12 +374,13 @@ li[data-split-from]::marker {
         padding-top: 150px;
         margin-top: -150px;
     }
-    .post {
-        padding-left: 48px;
-    }
     .post section h2 {
         padding-top: 150px;
         margin-top: calc(3.22rem - 150px);
+    }
+    .post {
+        padding-left: 24px;
+        padding-right: 24px;
     }
     .post section {
         width: 100%;

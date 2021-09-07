@@ -7,8 +7,8 @@ var GithubSlugger = require('github-slugger')
 
 
 const TocWrapper = styled.div`
-  background-color:#f7f7f7;
-  border: 1px solid #eee;
+  background-color: #fff;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
   padding: 2rem;
   
  
@@ -25,6 +25,7 @@ const TocList = styled.ol`
   }
   ${bp.mobile} {
       column-count: unset;
+      font-size:1rem;
   }
 `
 const TocHeading = styled.div`
@@ -37,6 +38,9 @@ const TocItem = styled.li`
     &:before {
         content: counter(tocCounter);
         display: inline-block;
+    }
+    a {
+        color: #AF4B5A;
     }
     
 `

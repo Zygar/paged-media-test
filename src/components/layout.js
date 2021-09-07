@@ -13,8 +13,8 @@ const Container = styled.div`
 `
 
 const Header = styled.header`
-   border-bottom: 1px solid #333;
    background-color: #fff;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
    position: sticky;
    width: 100%;
    top: 0;
@@ -78,7 +78,7 @@ const PageTitle = styled.span`
       font-size: 1.25em;
   }
   ${bp.mobile} {
-      font-size: 1em;
+      font-size: 1.33em;
   }
 `
 
@@ -141,7 +141,7 @@ const NextPrevLink = styled(props => <Link {...props} />)`
 `
 
 const NextPrevLabel = styled.div`
-  ${bp.tablet} {
+  ${bp.medium} {
       display:none;
   }
 `

@@ -14,7 +14,7 @@ const Chapter = styled.div`
   display: grid;
   /* align-items: flex-end;
   justify-content: space-between; */
-  grid-template-columns: 1fr minmax(40px, 80px);
+  grid-template-columns: 2fr min-content;
   grid-template-rows: min-content 1fr min-content;
   grid-template-areas: "heading downloads"
   "summary summary"
@@ -22,6 +22,34 @@ const Chapter = styled.div`
   margin-bottom: 1rem;
   border-bottom: 1px solid #ddd;
   padding-bottom:1rem;
+  ol {margin-bottom:0}
+  &:last-of-type {
+    border-bottom:none;
+    margin-bottom:0;
+    padding-bottom:0rem;
+  }
+  
+  a {
+    color: #AF4B5A;
+    transition: all 0.1s ease-in-out;
+    &:hover {
+      color:#da5065;
+    }
+  }
+  
+  small a {
+    
+    white-space:nowrap;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    &:after {
+      position: relative;
+      display:inline-block;
+      left: 4px;
+      content: "↓";
+      text-decoration: none;
+    }
+  }
   ${bp.tablet} {
     grid-template-columns: 1fr;
     grid-template-rows: min-content min-content 1fr min-content;
@@ -36,17 +64,27 @@ const ChapterHeading = styled.h3`
   font-weight: normal!important;
   margin: 0;
   word-break: keep-all;
+  ${bp.mobile} {
+    font-size: 1.5em;
+    margin-bottom:.25em;
+  }
+  
+  
 `
 const ChapterSummary = styled.p`
    font-size: 0.8rem;
    margin:1em 0 0 0 ;
    max-width: 60em;
    grid-area:summary;
+   ${bp.mobile} {
+     font-size: 0.9rem;
+   }
 `
 
 const TocWrapper = styled.div`
    grid-area: toc;
    margin-top: 1rem;
+   margin-bottom:0;
    ${bp.mobile} {
      display:none;
    }
@@ -75,6 +113,8 @@ const TocBox = styled.div`
     margin-top: -3em;
     grid-row: 1;
   }
+  
+  
 `
 
 const Intro = styled.div`
@@ -83,6 +123,16 @@ const Intro = styled.div`
   font-size: 18px;
   ${bp.medium} {
     padding-right: 0;
+    padding-left: 3rem;
+    padding-right:3rem;
+    margin-bottom:4rem;
+  }
+  h4 {
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    opacity: 0.8;
+    font-weight: bold;
+  
   }
 `
 
@@ -125,6 +175,7 @@ export default function Home({ data }) {
     <Container>
       <Grid>
         <Intro>
+          <h4>About this document</h4>
           <p>COOK Alliance’s model legislation and model code provides a guide for legalizing and regulating home cooking businesses. </p>
           <p>Currently, there are no standardized regulations to help guide states or regulatory officials in allowing cooks to prepare and sell meals from their homes. While several states have passed or are in the process of passing home cooking legislation (such as California, Utah, and Wyoming), the FDA model food code is silent on the activity.</p>
           <p>COOK Alliance provides two different documents, a model bill and a model regulatory code. Every state has different rules and regulations and these documents must be updated and amended to integrate into relevant state and municipal laws.</p>

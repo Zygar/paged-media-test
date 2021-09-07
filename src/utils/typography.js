@@ -37,7 +37,11 @@ const typography = new Typography(
                     fontSize: '10pt',
                     lineHeight: 1.61
                 },
-
+                '@media only screen and (max-width:480px)': {
+                    html: {
+                        fontSize: "14px"
+                    }
+                },
                 "@media only print": {
                     html: {
                         fontSize: "9.5pt"

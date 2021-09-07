@@ -9,7 +9,6 @@ nextSlug: "/model-code"
 prevTitle: "Introduction"
 prevSlug: "/acknowledgements"
 ---
-# Model Legislation
 
 ## Definitions
 

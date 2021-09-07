@@ -7,7 +7,7 @@ import { Link } from "gatsby"
 const MenuWrapper = styled.div`
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     height: 100%;
     width: 100%;
     background: #ffffff;
@@ -24,6 +24,7 @@ const MenuWrapper = styled.div`
     transition: all 0.35s;
 
     cursor: pointer;
+    font-size: 2rem;
 
     &.open {
         visibility: visible;
@@ -32,31 +33,47 @@ const MenuWrapper = styled.div`
 
     a {
         pointer-events: all;
+        color:#AF4B5A
     }
 `
+
+
+
+const CloseButton = styled.div`
+     position: absolute;
+     top: 4rem;
+     right: 4rem;
+`
+
 class Menu extends React.Component {
     constructor(props) {
-        super(props)
+        super(props);
         this.state = {
             open: false,
         }
     }
-
+    componentDidMount() {
+        console.log(this)
+    }
     render(props) {
         return (
             <MenuWrapper
                 role="button"
-                tabIndex="0"
+                tabIndex={0}
                 className={`${this.state.open ? `open` : ""}`}
                 onClick={() => this.close()}
-                onKeyDown={() => this.close()}
-            >  {
+                onKeyDown={() => this.close()
+                }
+            >
+                <CloseButton>Close</CloseButton>
+                {
                     this.props.menuLinks.map(menuItem => (
                         <Link to={menuItem.link}>{menuItem.name}</Link>
                     )
 
-                    )}
-            </MenuWrapper>
+                    )
+                }
+            </MenuWrapper >
         )
     }
 

@@ -33,7 +33,7 @@ const Sidebar = styled.aside`
   ${bp.medium} {
     position: unset;
     width: 100%;
-    margin-bottom: 4em;
+    margin-bottom: 6em;
   }
 `
 

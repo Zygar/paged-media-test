@@ -15,6 +15,10 @@ const LogoWrapper = styled(props => <Link {...props} />)`
    position: absolute;
    top:-1em;
    left:0;
+   ${bp.mobile} {
+       top:0;
+       bottom:0;
+   }
 `
 
 

@@ -13,6 +13,9 @@ const Heading = styled.h1`
   margin:0;
   padding:0;
   font-size: 2.83rem;
+  ${bp.mobile}{
+    font-size: 2.33rem;
+  }
 `
 
 const HeroBox = styled.div`
@@ -35,8 +38,31 @@ const Eyebrow = styled.span`
 const ActionLink = styled(props => <Link {...props} />)`
   color: unset;
   font-size: 1.25rem;
-  display:block;
-  margin-top: 1em;
+  display:inline-block;
+  margin-top: 3em;
+  color: #fff;
+  border: 3px solid #fff;
+  align-items: center;
+  border-radius: 24px;
+  box-sizing: border-box;
+  justify-content: center;
+  outline:none;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-transform: uppercase;
+  letter-spacing:0.01em;
+  font-size: 14px;
+  font-weight: bold;
+  line-height:1;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  white-space: nowrap;
+  padding: 1rem 3rem;
+  text-decoration: none;
+  transition: all 0.1s ease-in-out;
+  &:hover {
+    color: #ff6e61;
+    background-color:#fff;
+  }
   &::after{
       content: " ↓";
   }

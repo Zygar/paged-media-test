@@ -6,7 +6,7 @@
 
 module.exports = {
     siteMetadata: {
-        title: "Home Cooking Framework",
+        title: "Home Cooking Policy Framework",
         titleTemplate: "%s · COOK Alliance",
         description:
             "A framework for legalizing and regulating home cooking businesses.",
@@ -20,13 +20,12 @@ module.exports = {
                 link: "/"
             },
             {
+                name: "Model Legislation",
+                link: "/model-legislation"
+            }, {
                 name: "Model Code",
                 link: "/model-code"
             },
-            {
-                name: "Model Legislation",
-                link: "/model-legislation"
-            }
         ]
     },
     plugins: [{

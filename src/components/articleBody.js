@@ -9,7 +9,7 @@ function ArticleBody(props) {
         <article
             dangerouslySetInnerHTML={{ __html: props.html }}
             className={`post ${props.theme}`}
-            style={{ counterSet: `h1counter ${props.numberingStart} ` }}
+            style={{ counterReset: `h1counter ${props.numberingStart}  h2counter 0` }}
         >
 
         </article>
