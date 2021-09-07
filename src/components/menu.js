@@ -25,7 +25,9 @@ const MenuWrapper = styled.div`
 
     cursor: pointer;
     font-size: 2rem;
-
+    @media print {
+        display:none!important;
+    }
     &.open {
         visibility: visible;
         opacity: 1;

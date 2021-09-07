@@ -167,7 +167,7 @@ export default function Home({ data }) {
 
         <HeroBox>
           <Eyebrow>Home Cooking Model Policy</Eyebrow>
-          <Heading>A framework for legalizing and regulating home cooking businesses.</Heading>
+          <Heading>A guide for legalizing and regulating home-based food businesses in the 21st century. </Heading>
         </HeroBox>
 
       </Container>
@@ -176,9 +176,10 @@ export default function Home({ data }) {
       <Grid>
         <Intro>
           <h4>About this document</h4>
-          <p>COOK Alliance’s model legislation and model code provides a guide for legalizing and regulating home cooking businesses. </p>
-          <p>Currently, there are no standardized regulations to help guide states or regulatory officials in allowing cooks to prepare and sell meals from their homes. While several states have passed or are in the process of passing home cooking legislation (such as California, Utah, and Wyoming), the FDA model food code is silent on the activity.</p>
-          <p>COOK Alliance provides two different documents, a model bill and a model regulatory code. Every state has different rules and regulations and these documents must be updated and amended to integrate into relevant state and municipal laws.</p>
+          <p>The COOK Alliance hopes this model legislation and code will provide a useful guide for legalizing and regulating home-based food businesses in the 21st century. We have created these as open-source, living documents in the hopes that they continue to evolve alongside the growing home cooking legalization movement. </p>
+          <p>Currently, there are no standardized regulations to help guide states or regulatory officials in allowing cooks to prepare and sell meals from their homes. While several states have passed or are in the process of passing home cooking legislation (such as <a href="https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=201720180AB626">California</a>, <a href="https://le.utah.gov/~2021/bills/static/HB0094.html">Utah</a>, and <a href="https://www.wyoleg.gov/Legislation/2020/HB0084">Wyoming</a>, the <a href="https://www.fda.gov/food/retail-food-protection/fda-food-code">FDA model food code</a> is silent on the activity. </p>
+          <p>The COOK Alliance is initially releasing two different documents, a model bill and a model regulatory code. Every state has different rules and regulations so these documents must be amended to integrate into relevant state and municipal laws. </p>
+          <p>These documents are offered under <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International license</a> so that they can be used and edited by advocates and legislators.</p>
         </Intro>
         <TocBox>
           <h2 style={{ marginTop: 0 }}>Table of contents</h2>

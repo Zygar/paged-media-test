@@ -431,6 +431,9 @@ li[data-split-from]::marker {
 }
 
 @media only print {
+    header {
+        display: none;
+    }
     .margin-toggle {
         display: none;
     }

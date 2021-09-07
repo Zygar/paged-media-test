@@ -24,6 +24,9 @@ const Header = styled.header`
    ${bp.tablet} {
        padding: .5rem 0 .5rem 0;
    }
+   @media print {
+       display:none;
+   }
 `
 const HeaderGrid = styled.div`
     display:grid;
@@ -63,14 +66,34 @@ const Footer = styled.footer`
     min-height: 150px;
     color:#fff; 
     
+    >div {
+        display: flex;
+        padding-top:6.44rem;
+        padding-bottom:4rem;
+    }
+    
     a {color:#fff;}
-    div {max-width: 35em; margin-left:0; padding-top:3.22rem; padding-bottom: 3.22rem; font-size:0.8rem!important; h4 {font-size:0.8rem;} p{margin-bottom:0;}}
+    >div>div {
+        margin-left:0; 
+        font-size:0.8rem!important; 
+        &:first-child {
+            padding-right: 1.61rem;
+        }
+        &:last-child {
+            padding-left: 1.61rem;}
+        h4 {font-size:0.8rem;} 
+    }
     ${bp.tablet} {
-        div {
+        >div {
             font-size: 1rem;
             margin-left: auto;
-            text-align: center;
-            h4 {font-size: 1rem;}
+            flex-direction: column;
+            h4 {font-size: 1rem; }
+            >div{
+                padding-left:0!important;
+                padding-right: 0!important;
+                margin-bottom:1rem;
+            }
         }
     }
 `
@@ -199,8 +222,14 @@ export default function Layout(props) {
 
                 <div>
                     <h4>Published by the <a href="https://www.cookalliance.org/">COOK Alliance</a></h4>
-                    <p>We are the non profit that legalized the country’s first home restaurants.
-                        Our mission is to establish a just &amp; people-powered home cooking industry.</p>
+                    <p><a href="https://www.cookalliance.org/">The COOK Alliance</a> is a nonprofit whose mission is to establish just &amp; people-powered food systems. We believe that legalizing home restaurants in the United States creates more economic access for cooks, healthy food options for customers, and cultural exchange for communities. </p>
+                    <p>As the primary sponsor behind the first home restaurants bills in the US, we are now working to ensure equitable, accessible implementation in early adopting states and to extend the same opportunity to more home cooks across the nation. We are also increasingly active in supporting new Cottage Food policies and other local food movement initiatives. </p>
+                    <p>We can be reached for technical assistance, partnership, or philanthropic inquiries at <a href="mailto:hello@cookalliance.org">hello@cookalliance.org</a> </p>
+                </div>
+                <div>
+                    <h4>License &amp; Feedback</h4>
+                    <p>These documents are offered under <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International license</a> so that they can be used and edited by advocates and legislators.</p>
+                    <p>We hope to release new versions of these model documents periodically as the legislative landscape evolves and we continue to learn from early states’ experiences with implementation. Additional input is welcome and can be shared with us at any time by emailing <a href="mailto:advocacy@cookalliance.org">advocacy@cookalliance.org</a> with “Model Legislation Feedback” in the subject line. </p>
                 </div>
             </Box>
             </Footer>
