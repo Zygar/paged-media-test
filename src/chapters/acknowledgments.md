@@ -1,15 +1,18 @@
 ---
-slug: "acknowledgements"
-title: "Acknowledgements"
+slug: "introduction"
+title: "Introduction"
 author: "COOK Alliance"
+description: "Intro placeholder" 
+excerpt: "What do we need this for "
 nextTitle: "Model Legislation"
 nextSlug: "/model-legislation"
 prevTitle: "Home"
 prevSlug: "/"
+hasPdf: "false"
 ---
 
 
-# Acknowledgements:
+## Acknowledgements
 This report was written by Liz Allen, Matthew Jorgensen, and Peter Ruddock of the COOK Alliance. 
 
 This document represents the best thinking of many lawyers, public health officials, and home cooks. It would not have been possible without the help of: 
@@ -24,6 +27,6 @@ This document represents the best thinking of many lawyers, public health offici
 
 Special thanks to University of Oregon’s Environmental and Natural Resource Center, Havard’s Food Law & Policy Clinic, the Small Business Association, Airbnb, and Shef for their monetary support. 
 
-### COOK Alliance
+## Ac
 
 The COOK Alliance is a nonprofit whose mission is to establish a just & people-powered home cooking industry. We believe that home restaurants should be legal in the United States. We successfully legalized home cooking in California and would like to bring this same opportunity to home cooks across the nation. 

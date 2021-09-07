@@ -17,6 +17,7 @@ const DocumentBody = styled.section`
   align-items: flex-start;
   position: relative;
   margin-top: 4em;
+  margin-bottom: 10em;
   ${bp.medium} {
     position: unset;
     flex-direction: column;
@@ -55,7 +56,7 @@ export default function Template({
     title: frontmatter.prevTitle || null,
     slug: frontmatter.prevSlug || null
   }
-
+  console.log(frontmatter)
   return (
     <Layout title={frontmatter.title} next={nextPage} prev={prevPage}>
       <Hero>
@@ -63,7 +64,8 @@ export default function Template({
           <HeroBox>
             <Eyebrow>{frontmatter.title}</Eyebrow>
             <Heading>{frontmatter.excerpt}</Heading>
-            <ActionLink href={`/${frontmatter.slug}.pdf`}>Download as PDF</ActionLink>
+
+            {frontmatter.hasPdf == "true" && <ActionLink href={`/${frontmatter.slug}.pdf`}>Download as PDF</ActionLink>}
           </HeroBox>
 
         </Container>
@@ -108,7 +110,7 @@ export const pageQuery = graphql`
       nextTitle
       nextSlug
 
-
+      hasPdf
       prevTitle
       prevSlug         
          

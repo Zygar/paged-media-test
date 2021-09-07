@@ -55,7 +55,7 @@ class Menu extends React.Component {
         }
     }
     componentDidMount() {
-        console.log(this)
+
     }
     render(props) {
         return (
@@ -70,7 +70,7 @@ class Menu extends React.Component {
                 <CloseButton>Close</CloseButton>
                 {
                     this.props.menuLinks.map(menuItem => (
-                        <Link to={menuItem.link}>{menuItem.name}</Link>
+                        <Link key={menuItem.name} to={menuItem.link}>{menuItem.name}</Link>
                     )
 
                     )

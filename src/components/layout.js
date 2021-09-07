@@ -183,7 +183,7 @@ const NextPrevLabel = styled.div`
 
 export default function Layout(props) {
     const { title, menuLinks } = useSiteMetadata();
-    console.log(menuLinks)
+
 
     const nextPage = props.next || { title: null, slug: null }
     const prevPage = props.prev || { title: null, slug: null }

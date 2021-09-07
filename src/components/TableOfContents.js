@@ -27,13 +27,7 @@ const TocList = styled.ol`
       column-count: unset;
       font-size:1rem;
   }
-`
-const TocHeading = styled.div`
-  text-transform: uppercase;
-  margin-bottom: 1em;
-  letter-spacing: .1em;
-`
-const TocItem = styled.li`
+  li {
     counter-increment: tocCounter;
     &:before {
         content: counter(tocCounter);
@@ -42,8 +36,14 @@ const TocItem = styled.li`
     a {
         color: #AF4B5A;
     }
-    
+  }
 `
+const TocHeading = styled.div`
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  letter-spacing: .1em;
+`
+
 
 
 function TableOfContents(props) {
@@ -53,8 +53,8 @@ function TableOfContents(props) {
         <TocWrapper>
             <TocHeading>Table of Contents</TocHeading>
             <TocList>
-                {headings.map(heading => (
-                    <TocItem><a href={`#${slugger.slug(heading)}`}>{heading}</a></TocItem>
+                {headings.map((heading, i) => (
+                    <li key={heading}><a href={`#${slugger.slug(heading)}`}>{heading}</a></li>
                 ))}
             </TocList>
         </TocWrapper>

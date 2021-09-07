@@ -16,6 +16,7 @@ const DocumentBody = styled.section`
   align-items: flex-start;
   position: relative;
   margin-top: 4em;
+  margin-bottom: 10em;
   ${bp.medium} {
     position: unset;
     flex-direction: column;

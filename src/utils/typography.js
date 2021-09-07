@@ -17,6 +17,9 @@ const typography = new Typography(
                 'ol': {
                     marginLeft: "0px"
                 },
+                a: {
+                    color: "#AF4B5A"
+                },
                 'ol li': {
                     // marginLeft: `-${rhythm(1)}`,
                     // paddingLeft: rhythm(1)

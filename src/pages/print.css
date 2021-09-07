@@ -544,6 +544,10 @@ h1 {
     }
 }
 
+.post:last-of-type {
+    margin-bottom: 0;
+}
+
 .pagedjs_left_page .post {
     /* margin-left: auto */
 }

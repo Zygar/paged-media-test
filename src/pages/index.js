@@ -151,8 +151,8 @@ export default function Home({ data }) {
 
   const pageTitle = "Home Cooking Policy Framework"
   const nextPage = {
-    title: "Acknowledgements",
-    slug: "/acknowledgements"
+    title: "Introduction",
+    slug: "/introduction"
   }
 
   const prevPage = {
@@ -187,7 +187,7 @@ export default function Home({ data }) {
             <div>
               <Chapter>
                 <ChapterHeading>
-                  <Link to="acknowledgements">Introduction</Link>
+                  <Link to="introduction">Introduction</Link>
                 </ChapterHeading>
                 <div>
                   <small style={{ fontSize: `11px` }}></small>
