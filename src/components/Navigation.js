@@ -3,6 +3,8 @@ import React from "react"
 import Menu from "./menu"
 import Hamburger from "./hamburger"
 import styled from "styled-components"
+import { bp } from "../utils/breakpoints"
+
 
 const NavButton = styled.button`
   display: flex;
@@ -28,13 +30,23 @@ const NavButton = styled.button`
   &:hover {
     background: #cb5b6c;
   }
+  ${bp.mobile} {
+      padding: 0 1rem;
+  }
 `
 const SizedBurger = styled.div`
    width: 20px;
    height: 20px;
    overflow: hidden;
    display:block;
-   margin-left: 1em;
+`
+
+const ButtonLabel = styled.span`
+margin-right: 1em;
+  ${bp.mobile} {
+      display: none;
+      margin: 0
+  }
 `
 
 
@@ -45,7 +57,7 @@ class Navigation extends React.Component {
             <>
 
                 <NavButton onClick={() => this.toggleMenu()}>
-                    All Chapters
+                    <ButtonLabel>All Chapters</ButtonLabel>
                     <SizedBurger>
                         <Hamburger color="#fff" />
                     </SizedBurger>

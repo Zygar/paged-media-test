@@ -8,7 +8,7 @@ import styled from "styled-components"
 import TableOfContents from "../components/TableOfContents"
 import Container from "../components/Box"
 import { Hero, Heading, HeroBox, Eyebrow, ActionLink } from "../components/hero"
-
+import { bp } from "../utils/breakpoints"
 
 // ABSTRACT ME OUT
 const DocumentBody = styled.section`
@@ -16,6 +16,10 @@ const DocumentBody = styled.section`
   align-items: flex-start;
   position: relative;
   margin-top: 4em;
+  ${bp.mobile} {
+    position: unset;
+    flex-direction: column;
+  }
 `
 const Sidebar = styled.aside`
   flex-basis: 15em;
@@ -25,6 +29,9 @@ const Sidebar = styled.aside`
   margin-right: 4rem;
   font-size: 0.8rem;
   min-width: 240px;
+  ${bp.mobile} {
+    position: unset;
+  }
 `
 
 export default function Template({ data }) {
