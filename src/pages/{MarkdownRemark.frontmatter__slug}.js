@@ -6,6 +6,8 @@ import "./print.css"
 import ArticleBody from "../components/articleBody"
 import styled from "styled-components"
 import TableOfContents from "../components/TableOfContents"
+import Container from "../components/Box"
+import { Hero, Heading, HeroBox, Eyebrow, ActionLink } from "../components/hero"
 
 // ABSTRACT ME OUT
 // ABSTRACT ME OUT
@@ -13,12 +15,13 @@ const DocumentBody = styled.section`
   display: flex;
   align-items: flex-start;
   position: relative;
+  margin-top: 4em;
 `
 const Sidebar = styled.aside`
   flex-basis: 15em;
   position: sticky;
   align-self: flex-start;
-  top: 64px;
+  top: 128px;
   margin-right: 4rem;
   font-size: 0.8rem;
   min-width: 240px;
@@ -46,29 +49,41 @@ export default function Template({
 
   return (
     <Layout title={frontmatter.title} next={nextPage}>
-      <DocumentBody>
-        {allSectionHeadings.length > 0 && <Sidebar>
-          <TableOfContents headings={allSectionHeadings}
-          />
-        </Sidebar>}
-        <main>
-          <ArticleBody
-            html={html}
-            numberingStart="1"
-            theme={frontmatter.theme}
-          />
+      <Hero>
+        <Container>
+          <HeroBox>
+            <Eyebrow>{frontmatter.title}</Eyebrow>
+            <Heading>{frontmatter.excerpt}</Heading>
+            <ActionLink to={`/${frontmatter.slug}.pdf`}>Download as PDF</ActionLink>
+          </HeroBox>
 
-        </main>
-      </DocumentBody>
+        </Container>
+      </Hero>
+      <Container>
+
+        <DocumentBody>
+          {allSectionHeadings.length > 0 && <Sidebar>
+            <TableOfContents headings={allSectionHeadings}
+            />
+          </Sidebar>}
+          <main>
+            <ArticleBody
+              html={html}
+              numberingStart="1"
+              theme={frontmatter.theme}
+            />
+          </main>
+        </DocumentBody>
+      </Container>
       {/* <Link to={frontmatter.next.nextTitle}>Next</Link> */}
     </Layout>
   )
 }
 
 export const pageQuery = graphql`
-  query($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      html
+      query($id: String!) {
+        markdownRemark(id: {eq: $id }) {
+        html
       headings(depth: h2) {
         depth
         value
@@ -76,18 +91,19 @@ export const pageQuery = graphql`
       frontmatter {
         slug
         title
-        author
-        theme
-        numberingStart
-        
-        nextTitle
-        nextSlug
-       
-        
-        prevTitle
-        prevSlug         
+      author
+      theme
+      numberingStart
+      description
+      excerpt
+      nextTitle
+      nextSlug
+
+
+      prevTitle
+      prevSlug         
          
       }
     }
   }
-`
+      `

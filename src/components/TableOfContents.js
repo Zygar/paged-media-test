@@ -4,9 +4,9 @@ import { Link, StaticQuery, graphql } from "gatsby"
 var GithubSlugger = require('github-slugger')
 
 const TocWrapper = styled.ol`
-  background-color:#eee;
-  border: 1px solid #ddd;
-  padding: 1rem;
+  background-color:#f7f7f7;
+  border: 1px solid #eee;
+  padding: 2rem;
   counter-reset: tocCounter;
   @media print {
       break-after: always;

@@ -34,7 +34,7 @@ const typography = new Typography(
                     fontSize: "8pt"
                 },
                 '.sidenote': {
-                    fontSize: '7pt',
+                    fontSize: '10pt',
                     lineHeight: 1.61
                 },
 

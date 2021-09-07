@@ -6,11 +6,15 @@ import styled from "styled-components"
 import IndexToc from "../components/IndexToc"
 import Container from "../components/Box"
 import SEO from "../components/seo"
+import { Hero, Heading, HeroBox, Eyebrow } from "../components/hero"
+import { bp } from "../utils/breakpoints"
+
+
 const Chapter = styled.div`
   display: grid;
   /* align-items: flex-end;
   justify-content: space-between; */
-  grid-template-columns: 1fr minmax(40px, 120px);
+  grid-template-columns: 1fr minmax(40px, 80px);
   grid-template-rows: min-content 1fr min-content;
   grid-template-areas: "heading downloads"
   "summary summary"
@@ -18,12 +22,20 @@ const Chapter = styled.div`
   margin-bottom: 1rem;
   border-bottom: 1px solid #ddd;
   padding-bottom:1rem;
+  ${bp.tablet} {
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content min-content 1fr min-content;
+    grid-template-areas: "heading"
+    "downloads"
+    "summary"
+    "toc"
+  }
 `
 
 const ChapterHeading = styled.h3`
   font-weight: normal!important;
   margin: 0;
-  max-width:60%;
+  word-break: keep-all;
 `
 const ChapterSummary = styled.p`
    font-size: 0.8rem;
@@ -35,26 +47,22 @@ const ChapterSummary = styled.p`
 const TocWrapper = styled.div`
    grid-area: toc;
    margin-top: 1rem;
+   ${bp.mobile} {
+     display:none;
+   }
 `
-const Hero = styled.div`
-  background: #ff6e61;
-  padding-top: 120px;
-  padding-bottom: 120px;
 
-`
-const Heading = styled.h1`
-  margin:0;
-  padding:0;
-`
 
 const Grid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
+  ${bp.medium} {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
 `
 
-const HeroBox = styled.div`
-  max-width: 50%;
-`
+
 
 const TocBox = styled.div`
   background-color: #fff;
@@ -62,13 +70,23 @@ const TocBox = styled.div`
   padding: 3em;
   margin-top: -5em;
   margin-bottom: -5em;
+  ${bp.medium} {
+    margin:0;
+    margin-top: -3em;
+    grid-row: 1;
+  }
 `
 
 const Intro = styled.div`
   padding-top: 4em;
   padding-right: 4em;
   font-size: 18px;
+  ${bp.medium} {
+    padding-right: 0;
+  }
 `
+
+
 
 export default function Home({ data }) {
 
@@ -98,6 +116,7 @@ export default function Home({ data }) {
       <Container>
 
         <HeroBox>
+          <Eyebrow>Home Cooking Model Policy</Eyebrow>
           <Heading>A framework for legalizing and regulating home cooking businesses.</Heading>
         </HeroBox>
 
@@ -111,7 +130,7 @@ export default function Home({ data }) {
           <p>COOK Alliance provides two different documents, a model bill and a model regulatory code. Every state has different rules and regulations and these documents must be updated and amended to integrate into relevant state and municipal laws.</p>
         </Intro>
         <TocBox>
-          <h2>Table of contents</h2>
+          <h2 style={{ marginTop: 0 }}>Table of contents</h2>
           {
             <div>
               <Chapter>

@@ -6,12 +6,16 @@ import "./print.css"
 import ArticleBody from "../components/articleBody"
 import styled from "styled-components"
 import TableOfContents from "../components/TableOfContents"
+import Container from "../components/Box"
+import { Hero, Heading, HeroBox, Eyebrow, ActionLink } from "../components/hero"
+
 
 // ABSTRACT ME OUT
 const DocumentBody = styled.section`
   display: flex;
   align-items: flex-start;
   position: relative;
+  margin-top: 4em;
 `
 const Sidebar = styled.aside`
   flex-basis: 15em;
@@ -21,7 +25,6 @@ const Sidebar = styled.aside`
   margin-right: 4rem;
   font-size: 0.8rem;
   min-width: 240px;
-  margin-top: 6.44rem; //remove me later 
 `
 
 export default function Template({ data }) {
@@ -33,30 +36,42 @@ export default function Template({ data }) {
   })
   console.log(allSectionHeadings)
   return (
-    <Layout>
-      <section>
-        <h1>Model Code</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a faucibus metus. Morbi fermentum turpis ac sem porttitor ornare. Ut est mi, dictum et ultricies vel, accumsan id elit.  </p>
-      </section>
-      <DocumentBody>
-        <Sidebar>
-          <TableOfContents headings={allSectionHeadings}
-          />
-        </Sidebar>
-        <main>
-          {
-            allModelCode.map(edge => (
-              <ArticleBody
-                html={edge.node.html}
-                numberingStart={edge.node.frontmatter.numberingStart}
-                key={edge.node.id}
-                theme={edge.node.frontmatter.theme}
-              />
-            ))
-          }
-        </main>
-      </DocumentBody>
+    <Layout title="Model Code">
+      <Hero>
+        <Container>
 
+          <HeroBox>
+            <Eyebrow>Model Code</Eyebrow>
+            <Heading>A detailed set of regulations that right-sizes the food code for the home kitchen.</Heading>
+            <ActionLink to={`/model-code.pdf`}>Download as PDF</ActionLink>
+          </HeroBox>
+
+        </Container>
+      </Hero>
+      <Container>
+        <DocumentBody>
+
+
+          <Sidebar>
+            <TableOfContents headings={allSectionHeadings}
+            />
+          </Sidebar>
+          <main>
+            {
+              allModelCode.map(edge => (
+                <ArticleBody
+                  html={edge.node.html}
+                  numberingStart={edge.node.frontmatter.numberingStart}
+                  key={edge.node.id}
+                  theme={edge.node.frontmatter.theme}
+                />
+              ))
+            }
+          </main>
+
+
+        </DocumentBody>
+      </Container>
     </Layout>
   )
 }

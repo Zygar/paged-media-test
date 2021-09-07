@@ -2,6 +2,8 @@
 slug: "model-legislation"
 title: "Model Legislation"
 author: "COOK Alliance"
+description: "This model bill creates a framework for the inspection and permitting of Home Cooking Operations and the regulation of Online Food Platforms that serve as marketplaces for home cooks." 
+excerpt: "A model bill that creates a framework to regulate home cooking operations and online marketplaces. "
 nextTitle: "Model Code"
 nextSlug: "/model-code"
 prevTitle: "Introduction"

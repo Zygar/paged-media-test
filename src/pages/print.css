@@ -33,6 +33,14 @@
     font-style: normal;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #343840
+}
+
 @media only screen {
     body {
         /* max-width: 80vw; */
@@ -240,20 +248,24 @@ li[data-split-from]::marker {
 }
 
 .sidenote {
-    padding-bottom: 1.61rem;
-    color: #ff6e61;
+    padding: 1.61rem;
+    padding-left: 2.5rem;
+    margin-top: -1.61rem;
+    /* color: #ff6e61; */
     font-weight: normal;
+    opacity: 0.8;
+    border: 1px solid #ccc;
 }
 
 .post h2 {
-    color: #ff6e61
+    /* color: #ff6e61 */
 }
 
 .note-marker_sidenote::before {
     vertical-align: super;
     /* float: left; */
     margin-right: 0.4025rem;
-    font-size: 6pt;
+    font-size: 8pt;
 }
 
 @media only screen {
@@ -278,6 +290,7 @@ li[data-split-from]::marker {
         margin-bottom: 0;
         /* vertical-align: baseline; */
         position: relative;
+        text-indent: -.5rem;
     }
     .pagedjs_pages .sidenote-number {
         display: none;
@@ -296,13 +309,28 @@ li[data-split-from]::marker {
     .sidenote-number:after {
         content: counter(sidenote-counter);
         font-size: 1rem;
-        top: -0.5rem;
+        top: -0.3rem;
         left: 0.1rem;
+        background-color: #AF4B5A;
+        color: #fff;
+        font-weight: bold;
+        padding: 4px;
+        border-radius: 2px;
+        vertical-align: super;
+        font-size: .8rem;
     }
     .sidenote:before {
-        content: counter(sidenote-counter) " ";
+        content: counter(sidenote-counter);
         font-size: 0.7rem;
         top: -0.5rem;
+        margin-left: -1rem;
+        margin-right: .5rem;
+        width: .5rem;
+        background-color: #AF4B5A;
+        color: #fff;
+        font-weight: bold;
+        padding: 4px;
+        border-radius: 2px;
     }
     input.margin-toggle {
         display: none;
@@ -316,10 +344,7 @@ li[data-split-from]::marker {
 }
 
 @media only screen and (max-width: 760px) {
-    body {
-        padding-left: 8%;
-        padding-right: 8%;
-    }
+    body {}
     .post {
         width: 100%;
     }
@@ -383,12 +408,13 @@ li[data-split-from]::marker {
 
 h1 {
     string-set: chapter content(text);
+    margin-top: 0;
 }
 
 h1 {
     /* background-color: #ff6e61; */
-    color: #fff;
-    padding-top: 4em;
+    /* color: #fff; */
+    /* padding-top: 4em; */
 }
 
 .page-intro {
