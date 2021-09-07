@@ -58,7 +58,7 @@ export default function Template({ data }) {
           <HeroBox>
             <Eyebrow>Model Code</Eyebrow>
             <Heading>A detailed set of regulations that right-sizes the food code for the home kitchen.</Heading>
-            <ActionLink to={`/model-code.pdf`}>Download as PDF</ActionLink>
+            <ActionLink href={`/model-code.pdf`}>Download as PDF</ActionLink>
           </HeroBox>
 
         </Container>

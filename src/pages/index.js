@@ -189,7 +189,7 @@ export default function Home({ data }) {
                   <Link to="acknowledgements">Introduction</Link>
                 </ChapterHeading>
                 <div>
-                  <small style={{ fontSize: `11px` }}><Link to={`/introduction.pdf`}>Download PDF</Link> </small>
+                  <small style={{ fontSize: `11px` }}></small>
                 </div>
                 <ChapterSummary>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a faucibus metus. Morbi fermentum turpis ac sem porttitor ornare. Ut est mi, dictum et ultricies vel, accumsan id elit.
@@ -202,7 +202,7 @@ export default function Home({ data }) {
                   <Link to="model-legislation">Model Legislation</Link>
                 </ChapterHeading>
                 <div>
-                  <small style={{ fontSize: `11px` }}><Link to={`/model-legislation.pdf`}>Download PDF</Link> </small>
+                  <small style={{ fontSize: `11px` }}><a href={`/model-legislation.pdf`}>Download PDF</a> </small>
                 </div>
                 <ChapterSummary>
                   This model bill creates a framework for the inspection and permitting of Home Cooking Operations and the regulation of Online Food Platforms that serve as marketplaces for home cooks.
@@ -216,7 +216,7 @@ export default function Home({ data }) {
                   <Link to="model-code">Model Code</Link>
                 </ChapterHeading>
                 <div>
-                  <small style={{ fontSize: `11px` }}><Link to={`/model-code.pdf`}>Download PDF</Link> </small>
+                  <small style={{ fontSize: `11px` }}><a href={`/model-code.pdf`}>Download PDF</a> </small>
                 </div>
                 <ChapterSummary>
                   Based on the FDA Model Food Code, this is a detailed set of regulations that right-sizes the food code for the home kitchen. It is for use by state and regulatory agencies to ensure appropriate safeguards and to add detail to the model legislation.

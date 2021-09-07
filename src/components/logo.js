@@ -19,6 +19,7 @@ const LogoWrapper = styled(props => <Link {...props} />)`
        top:0;
        bottom:0;
    }
+   
 `
 
 
@@ -40,7 +41,7 @@ export function Logo(props) {
             alt="COOK Alliance"
             placeholder="blurred"
             height={200}
-            objectFit="contain" />
+        />
 
         {/* <SiteTitle>{props.title}</SiteTitle> */}
     </LogoWrapper>

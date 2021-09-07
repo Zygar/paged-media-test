@@ -63,7 +63,7 @@ export default function Template({
           <HeroBox>
             <Eyebrow>{frontmatter.title}</Eyebrow>
             <Heading>{frontmatter.excerpt}</Heading>
-            <ActionLink to={`/${frontmatter.slug}.pdf`}>Download as PDF</ActionLink>
+            <ActionLink href={`/${frontmatter.slug}.pdf`}>Download as PDF</ActionLink>
           </HeroBox>
 
         </Container>

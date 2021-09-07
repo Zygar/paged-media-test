@@ -35,7 +35,7 @@ const Eyebrow = styled.span`
   font-size: 0.85rem;
 `
 
-const ActionLink = styled(props => <Link {...props} />)`
+const ActionLink = styled.a`
   color: unset;
   font-size: 1.25rem;
   display:inline-block;

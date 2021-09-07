@@ -61,6 +61,18 @@ const NavLink = styled.li`
 const Footer = styled.footer`
     background-color: #585A67;
     min-height: 150px;
+    color:#fff; 
+    
+    a {color:#fff;}
+    div {max-width: 35em; margin-left:0; padding-top:3.22rem; padding-bottom: 3.22rem; font-size:0.8rem!important; h4 {font-size:0.8rem;} p{margin-bottom:0;}}
+    ${bp.tablet} {
+        div {
+            font-size: 1rem;
+            margin-left: auto;
+            text-align: center;
+            h4 {font-size: 1rem;}
+        }
+    }
 `
 
 const PageTitleWrapper = styled.div`
@@ -183,8 +195,14 @@ export default function Layout(props) {
                 {props.children}
             </main>
 
-            <Footer>
+            <Footer><Box>
 
+                <div>
+                    <h4>Published by the <a href="https://www.cookalliance.org/">COOK Alliance</a></h4>
+                    <p>We are the non profit that legalized the country’s first home restaurants.
+                        Our mission is to establish a just &amp; people-powered home cooking industry.</p>
+                </div>
+            </Box>
             </Footer>
 
         </Container>
