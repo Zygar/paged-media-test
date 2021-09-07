@@ -7,7 +7,7 @@ excerpt: "A model bill that creates a framework to regulate home cooking operati
 nextTitle: "Model Code"
 nextSlug: "/model-code"
 prevTitle: "Introduction"
-prevSlug: "/introduction"
+prevSlug: "/acknowledgements"
 ---
 # Model Legislation
 

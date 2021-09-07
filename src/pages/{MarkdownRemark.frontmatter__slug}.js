@@ -43,12 +43,12 @@ export default function Template({
   }
 
   const prevPage = {
-    title: frontmatter.nextTitle || null,
-    slug: frontmatter.nextSlug || null
+    title: frontmatter.prevTitle || null,
+    slug: frontmatter.prevSlug || null
   }
 
   return (
-    <Layout title={frontmatter.title} next={nextPage}>
+    <Layout title={frontmatter.title} next={nextPage} prev={prevPage}>
       <Hero>
         <Container>
           <HeroBox>

@@ -69,8 +69,9 @@ const PageTitleWrapper = styled.div`
 const PageTitle = styled.span`
   font-weight: bold;
   line-height: 1.25;
-  font-size: 2em;
+  font-size: 1.5em;
   max-width: 10em;
+  overflow-wrap:normal;
   ${bp.tablet} {
       font-size: 1.25em;
   }
@@ -89,16 +90,55 @@ const LogoWrapper = styled.div`
   max-width: 8.6rem;
   margin-right: 1em;
   position: relative;
+  ${bp.tablet} {
+    max-width: 6.6rem
+ }
   ${bp.mobile} {
       max-width: 5rem;
   }
 `
 
 const MetaLinks = styled.div`
-  font-size: 0.8rem;
-  text-transform:uppercase;
-  letter-spacing: 0.1px;
-  display:none;
+    display:flex;
+    /* flex-direction: column; */
+    ${bp.tablet} {
+        flex-direction: row;
+    }
+  ${bp.mobile} {display:none;}
+`
+
+const NavWrapper = styled.div`
+  display:flex;
+  align-items: center;
+`
+const NextPrevLink = styled(props => <Link {...props} />)`
+  display: flex;
+  color: #AF4B5A;
+  border: 3px solid #AF4B5A;
+  align-items: center;
+  border-radius: 24px;
+  box-sizing: border-box;
+  justify-content: center;
+  outline:none;
+  min-height: 42px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-transform: uppercase;
+  letter-spacing:0.01em;
+  font-size: 12px;
+  font-weight: bold;
+  line-height:1;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  white-space: nowrap;
+  padding: 0 1rem;
+  text-decoration: none;
+  margin-right: .5em;
+`
+
+const NextPrevLabel = styled.div`
+  ${bp.tablet} {
+      display:none;
+  }
 `
 
 export default function Layout(props) {
@@ -119,14 +159,17 @@ export default function Layout(props) {
                             </LogoWrapper>
                             <PageTitleWrapper>
                                 <PageTitle>{props.title}</PageTitle>
-                                <MetaLinks>
-                                    {prevPage.title != null && <Link to={prevPage.slug}>{prevPage.title}</Link>}
-                                    {nextPage.title != null && <Link to={nextPage.slug}>{nextPage.title}</Link>}
-                                </MetaLinks>
+
                             </PageTitleWrapper>
                         </TitleWrapper>
 
-                        <Navigation menuLinks={menuLinks} />
+                        <NavWrapper>
+                            <MetaLinks>
+                                {prevPage.title != null && <NextPrevLink to={prevPage.slug}>← <NextPrevLabel>{prevPage.title}</NextPrevLabel></NextPrevLink>}
+                                {nextPage.title != null && <NextPrevLink to={nextPage.slug}><NextPrevLabel>{nextPage.title}</NextPrevLabel> →</NextPrevLink>}
+                            </MetaLinks>
+                            <Navigation menuLinks={menuLinks} />
+                        </NavWrapper>
                     </HeaderGrid>
                 </Box>
             </Header>

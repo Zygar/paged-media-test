@@ -101,8 +101,8 @@ export default function Home({ data }) {
 
   const pageTitle = "Home Cooking Policy Framework"
   const nextPage = {
-    title: "Model Code",
-    slug: "/model-code"
+    title: "Acknowledgements",
+    slug: "/acknowledgements"
   }
 
   const prevPage = {

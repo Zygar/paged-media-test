@@ -35,7 +35,12 @@ const Sidebar = styled.aside`
 `
 
 export default function Template({ data }) {
+  const pageTitle = "Home Cooking Policy Framework"
 
+  const prevPage = {
+    title: "Model Legislation",
+    slug: "/model-legislation"
+  }
   const allModelCode = data.allMarkdownRemark.edges;
   // console.log(allModelCode)
   const allSectionHeadings = allModelCode.map((edge) => {
@@ -43,7 +48,7 @@ export default function Template({ data }) {
   })
   console.log(allSectionHeadings)
   return (
-    <Layout title="Model Code">
+    <Layout title="Model Code" prev={prevPage}>
       <Hero>
         <Container>
 

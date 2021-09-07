@@ -2,8 +2,10 @@
 slug: "acknowledgements"
 title: "Acknowledgements"
 author: "COOK Alliance"
-next: "/model-legislation"
-prev: "/"
+nextTitle: "Model Legislation"
+nextSlug: "/model-legislation"
+prevTitle: "Table of Contents"
+prevSlug: "/"
 ---
 
 
