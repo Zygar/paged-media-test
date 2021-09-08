@@ -11,7 +11,7 @@ module.exports = {
         description:
             "A framework for legalizing and regulating home cooking businesses.",
         url: "https://policy.cookalliance.org", // No trailing slash allowed!
-        image: "/images/social-sharing.jpg", // Path to your image you placed in the 'static' folder
+        image: "/social-sharing.jpg", // Path to your image you placed in the 'static' folder
         twitterUsername: "@AllianceCook",
         author: `COOK Alliance`,
         menuLinks: [
