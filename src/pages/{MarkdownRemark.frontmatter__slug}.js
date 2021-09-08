@@ -58,7 +58,7 @@ export default function Template({
   }
   console.log(frontmatter)
   return (
-    <Layout title={frontmatter.title} next={nextPage} prev={prevPage}>
+    <Layout title={frontmatter.title} description={frontmatter.description} next={nextPage} prev={prevPage}>
       <Hero>
         <Container>
           <HeroBox>

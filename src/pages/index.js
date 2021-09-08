@@ -193,7 +193,7 @@ export default function Home({ data }) {
                   <small style={{ fontSize: `11px` }}></small>
                 </div>
                 <ChapterSummary>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a faucibus metus. Morbi fermentum turpis ac sem porttitor ornare. Ut est mi, dictum et ultricies vel, accumsan id elit.
+                  Home cooking and other local food production and consumption aren’t going anywhere. We need new post-industrial food system policies more than ever. Here, we introduce our framework for regulation of Home Cooking Operations, and why we believe this reform is essential.
                 </ChapterSummary>
 
               </Chapter>

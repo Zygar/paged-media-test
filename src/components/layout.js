@@ -189,7 +189,7 @@ export default function Layout(props) {
     const prevPage = props.prev || { title: null, slug: null }
     return (
         <Container>
-            <SEO title={props.title} />
+            <SEO title={props.title} description={props.description} />
             <Header>
                 <Box>
                     <HeaderGrid>
