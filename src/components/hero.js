@@ -7,11 +7,13 @@ const Hero = styled.div`
   padding-top: 120px;
   padding-bottom: 120px;
   color: #fff;
-
 `
 const Heading = styled.h1`
   margin:0;
   padding:0;
+  @media print {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
   font-size: 2.83rem;
   ${bp.mobile}{
     font-size: 2.33rem;

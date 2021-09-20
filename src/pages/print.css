@@ -1,3 +1,9 @@
+* {
+    color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}
+
 @font-face {
     font-family: 'Tiempos-Text';
     src: url('../fonts/TiemposTextWeb-Bold.woff');
@@ -432,7 +438,7 @@ li[data-split-from]::marker {
 
 @media only print {
     header {
-        display: none;
+        /* display: none; */
     }
     .margin-toggle {
         display: none;
@@ -557,7 +563,36 @@ h1 {
     break-before: always;
 }
 
+#hero {
+    page: coverPage;
+}
+
+@page coverPage {
+    background-color: #ff6e61;
+    @top-left {
+        border-bottom: none;
+        content: unset;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        align-items: unset;
+    }
+    @top-right {
+        border-bottom: none;
+        content: unset;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        align-items: unset;
+    }
+}
+
 @media print {
+    #hero {
+        width: 100%;
+        height: 100%;
+    }
+    #hero h1 {
+        color: #fff;
+    }
     section {
         widows: 4;
         orphans: 4;

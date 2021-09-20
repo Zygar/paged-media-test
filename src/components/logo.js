@@ -41,6 +41,7 @@ export function Logo(props) {
             alt="COOK Alliance"
             placeholder="blurred"
             height={200}
+            loading="eager"
         />
 
         {/* <SiteTitle>{props.title}</SiteTitle> */}

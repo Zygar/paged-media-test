@@ -53,7 +53,7 @@ export default function Template({ data }) {
   console.log(allSectionHeadings)
   return (
     <Layout title="Model Code" description="Based on the FDA Model Food Code, this is a detailed set of regulations that right-sizes the food code for the home kitchen. It is for use by state and regulatory agencies to ensure appropriate safeguards and to add detail to the model legislation." prev={prevPage}>
-      <Hero>
+      <Hero id="hero">
         <Container>
 
           <HeroBox>
