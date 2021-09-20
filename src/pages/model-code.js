@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import "./print.css"
 import ArticleBody from "../components/articleBody"
@@ -55,11 +56,19 @@ export default function Template({ data }) {
     <Layout title="Model Code" description="Based on the FDA Model Food Code, this is a detailed set of regulations that right-sizes the food code for the home kitchen. It is for use by state and regulatory agencies to ensure appropriate safeguards and to add detail to the model legislation." prev={prevPage}>
       <Hero id="hero">
         <Container>
-
+          <div className="show-on-print">
+            <StaticImage
+              src="../assets/cook-alliance-logo.png"
+              alt="COOK Alliance"
+              placeholder="blurred"
+              height={200}
+              loading="eager"
+            />
+          </div>
           <HeroBox>
             <Eyebrow id="title-eyebrow">Model Code</Eyebrow>
             <Heading>A detailed set of regulations that right-sizes the food code for the home kitchen.</Heading>
-            <ActionLink href={`/model-code.pdf`}>Download as PDF</ActionLink>
+            <ActionLink href={`/model-code.pdf`} className="hide-on-print">Download as PDF</ActionLink>
           </HeroBox>
 
         </Container>
