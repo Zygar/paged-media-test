@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import "./print.css"
 import ArticleBody from "../components/articleBody"
@@ -66,11 +67,22 @@ export default function Template({
     <Layout title={frontmatter.title} description={frontmatter.description} next={nextPage} prev={prevPage}>
       <Hero id="hero">
         <Container>
+          <div className="show-on-print">
+            <StaticImage
+              src="../assets/cook-alliance-logo.png"
+              alt="COOK Alliance"
+              placeholder="blurred"
+              height={200}
+              loading="eager"
+            />
+          </div>
           <HeroBox>
-            <Eyebrow>{frontmatter.title}</Eyebrow>
+
+
+            <Eyebrow id="title-eyebrow">{frontmatter.title}</Eyebrow>
             <Heading>{frontmatter.excerpt}</Heading>
 
-            {frontmatter.hasPdf == "true" && <ActionLink href={`/${frontmatter.slug}.pdf`}>Download as PDF</ActionLink>}
+            {frontmatter.hasPdf == "true" && <ActionLink className="hide-on-print" href={`/${frontmatter.slug}.pdf`}>Download as PDF</ActionLink>}
           </HeroBox>
 
         </Container>
