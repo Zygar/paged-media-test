@@ -68,7 +68,7 @@ export default function Template({ data }) {
         <DocumentBody>
 
 
-          <Sidebar>
+          <Sidebar id="sidebar">
             <TableOfContents headings={allSectionHeadings}
             />
           </Sidebar>

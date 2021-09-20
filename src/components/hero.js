@@ -11,9 +11,6 @@ const Hero = styled.div`
 const Heading = styled.h1`
   margin:0;
   padding:0;
-  @media print {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
   font-size: 2.83rem;
   ${bp.mobile}{
     font-size: 2.33rem;
@@ -27,6 +24,9 @@ const HeroBox = styled.div`
   }
   ${bp.tablet} {
     max-width: unset;
+  }
+  @media print {
+    max-width: none;
   }
 `
 
@@ -67,6 +67,9 @@ const ActionLink = styled.a`
   }
   &::after{
       content: " ↓";
+  }
+  @media print {
+    display:none;
   }
 `
 

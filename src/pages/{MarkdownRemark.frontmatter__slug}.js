@@ -22,6 +22,10 @@ const DocumentBody = styled.section`
     position: unset;
     flex-direction: column;
   }
+  @media print {
+    margin:0;
+    display: block;
+  }
 `
 const Sidebar = styled.aside`
   flex-basis: 15em;
@@ -36,6 +40,7 @@ const Sidebar = styled.aside`
     width: 100%;
     margin-bottom: 6em;
   }
+  @media print {display:none;}
 `
 
 export default function Template({
@@ -73,7 +78,7 @@ export default function Template({
       <Container>
 
         <DocumentBody>
-          {allSectionHeadings.length > 0 && <Sidebar>
+          {allSectionHeadings.length > 0 && <Sidebar id="sidebar">
             <TableOfContents headings={allSectionHeadings}
             />
           </Sidebar>}

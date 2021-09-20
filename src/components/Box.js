@@ -16,6 +16,9 @@ const ContainerStyled = styled.div`
         padding-left: 24px;
         padding-right: 24px;
     }
+    @media print {
+        padding: 0;
+    }
 `
 const Container = function ({ children }) {
     return (

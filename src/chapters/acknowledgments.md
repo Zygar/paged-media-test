@@ -22,7 +22,7 @@ The COOK Alliance hopes this model legislation and code will provide a useful gu
 
 ## Model Legislation & Code Summary
 
-Currently, there are no standardized regulations to help guide states or regulatory officials in allowing cooks to prepare and sell meals from their homes. While several states have passed or are in the process of passing home cooking legislation (such as[California](https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=201720180AB626),[Utah](https://le.utah.gov/~2021/bills/static/HB0094.html), and[Wyoming](https://www.wyoleg.gov/Legislation/2020/HB0084)), the[FDA model food code](https://www.fda.gov/food/retail-food-protection/fda-food-code) is silent on the activity. 
+Currently, there are no standardized regulations to help guide states or regulatory officials in allowing cooks to prepare and sell meals from their homes. While several states have passed or are in the process of passing home cooking legislation (such as [California](https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=201720180AB626), [Utah](https://le.utah.gov/~2021/bills/static/HB0094.html), and [Wyoming](https://www.wyoleg.gov/Legislation/2020/HB0084)), the [FDA model food code](https://www.fda.gov/food/retail-food-protection/fda-food-code) is silent on the activity. 
 
 The COOK Alliance is initially releasing two different documents, a model bill and a model regulatory code. Every state has different rules and regulations so these documents must be amended to integrate into relevant state and municipal laws:
 

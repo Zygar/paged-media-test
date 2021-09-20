@@ -25,7 +25,7 @@ const Header = styled.header`
        padding: .5rem 0 .5rem 0;
    }
    @media print {
-       position: static;
+       display: none;
    }
 `
 const HeaderGrid = styled.div`

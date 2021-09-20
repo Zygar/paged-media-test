@@ -48,6 +48,10 @@ const typography = new Typography(
                 "@media only print": {
                     html: {
                         fontSize: "9.5pt"
+                    },
+                    '.sidenote': {
+                        fontSize: '7pt',
+                        lineHeight: 1.61
                     }
                 }
             }

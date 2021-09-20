@@ -240,7 +240,7 @@ li[data-split-from]::marker {
 @page {
     --usable-page-area: calc((var(--pagedjs-pagebox-width) - var(--pagedjs-margin-left) - var(--pagedjs-margin-right)));
     /* e.g. 210 - 25 - 25  = 160mm */
-    --page-body-area: calc(var(--usable-page-area) * 0.65);
+    --page-body-area: calc(var(--usable-page-area) * 0.6);
     --page-margin-area: calc(var(--usable-page-area) - var(--page-body-area));
     --page-margin-body-gutter: 12mm;
 }
@@ -249,24 +249,58 @@ li[data-split-from]::marker {
     width: calc(var(--page-body-area))!important
 }
 
-.sidenote {
-    padding: 1.61rem;
-    padding-left: 2.5rem;
-    margin-top: -1.61rem;
-    /* color: #ff6e61; */
-    font-weight: normal;
-    opacity: 0.8;
-    border: 1px solid #ccc;
+.pagedjs_pages .post section {
+    width: unset;
 }
 
-.note-marker_sidenote::before {
-    vertical-align: super;
-    /* float: left; */
-    margin-right: 0.4025rem;
-    font-size: 8pt;
+.pagedjs_pages .sidenote {
+    width: unset;
+    padding: unset;
+    margin: unset;
+    opacity: unset;
+    border: none;
+    float: unset;
+    clear: unset;
+}
+
+@media print {
+    header {
+        display: none;
+    }
+    #sidebar {
+        display: none;
+    }
+    footer {
+        break-before: always;
+    }
+    .sidenote {
+        width: unset;
+        padding: unset;
+        margin: unset;
+        opacity: unset;
+        border: none;
+        float: unset;
+        clear: unset;
+        margin-bottom: 1em;
+    }
 }
 
 @media only screen {
+    .sidenote {
+        padding: 1.61rem;
+        padding-left: 2.5rem;
+        margin-top: -1.61rem;
+        /* color: #ff6e61; */
+        font-weight: normal;
+        opacity: 0.8;
+        border: 1px solid #ccc;
+    }
+    .note-marker_sidenote::before {
+        vertical-align: super;
+        /* float: left; */
+        margin-right: 0.4025rem;
+        font-size: 8pt;
+    }
     .post {
         /* background-color: #eee; */
     }
@@ -454,7 +488,7 @@ li[data-split-from]::marker {
     font-size: 6pt;
     font-family: system-ui;
     font-weight: bold;
-    background-color: #ff6e61;
+    background-color: #af4b5a;
     padding: 2px;
     border-radius: 4px;
 }
@@ -498,26 +532,12 @@ h1 {
     margin-top: 0;
 }
 
-.title-name {
-    font-size: 3rem;
-    line-height: 1;
-    font-weight: bold;
+div#hero {
     page: titlePage;
 }
 
-@page titlePage {
-    @top-left {
-        content: none;
-        border: none;
-        margin: 0;
-        padding: 0;
-    }
-    @top-right {
-        content: none;
-        border: none;
-        margin: 0;
-        padding: 0;
-    }
+footer {
+    page: colophon;
 }
 
 @page {
@@ -550,6 +570,29 @@ h1 {
     }
 }
 
+@page colophon {
+    background-color: #585A67;
+    color: #fff
+}
+
+@page :first {
+    size: letter;
+    margin: 0;
+    background-color: #ff6e61;
+    @top-left {
+        content: none;
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+    @top-right {
+        content: none;
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+}
+
 .post:last-of-type {
     margin-bottom: 0;
 }
@@ -558,31 +601,9 @@ h1 {
     /* margin-left: auto */
 }
 
-h1 {
+article h1 {
     page-break-before: page;
     break-before: always;
-}
-
-#hero {
-    page: coverPage;
-}
-
-@page coverPage {
-    background-color: #ff6e61;
-    @top-left {
-        border-bottom: none;
-        content: unset;
-        margin-bottom: 0;
-        padding-bottom: 0;
-        align-items: unset;
-    }
-    @top-right {
-        border-bottom: none;
-        content: unset;
-        margin-bottom: 0;
-        padding-bottom: 0;
-        align-items: unset;
-    }
 }
 
 @media print {
@@ -594,16 +615,16 @@ h1 {
         color: #fff;
     }
     section {
-        widows: 4;
-        orphans: 4;
+        /* widows: 4;
+        orphans: 4; */
     }
     p,
     ol,
     ul,
     li,
     blockquote {
-        orphans: 3;
-        widows: 3;
+        /* orphans: 3;
+        widows: 3; */
     }
     h2,
     h3,
@@ -618,12 +639,12 @@ h1 {
     }
     h2+p,
     h2+ol {
-        widows: 3;
-        orphans: 3;
+        /* widows: 3;
+        orphans: 3; */
     }
     li,
     p {
-        widows: 3;
-        orphans: 3;
+        /* widows: 3;
+        orphans: 3; */
     }
 }
