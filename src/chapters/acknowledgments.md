@@ -29,6 +29,7 @@ The COOK Alliance is initially releasing two different documents, a model bill a
 * **[Model Legislation](/model-legislation)** - this model bill creates a framework for the inspection and permitting of Home Cooking Operations and the regulation of Online Food Platforms that serve as marketplaces for home cooks.
 * **[Model Code](/model-code)** - based on the FDA Model Food Code, this is a detailed set of regulations for safely allowing meal sales from the home kitchen. It adds detail to the model legislation that can be used by state and regulatory agencies to ensure appropriate safeguards. 
 
+
 ## Acknowledgements
 
 ### Original Author
