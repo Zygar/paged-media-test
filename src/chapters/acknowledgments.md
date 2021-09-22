@@ -11,8 +11,6 @@ prevSlug: "/"
 hasPdf: "false"
 ---
 
-THIS IS A TEST THIS IS A TEST
-
 ## Introduction
 The past two tumultuous years have been rife with challenge and paradox. A global pandemic and climate disasters have kept many confined to their homes while many others have been forced to move. Protests for racial, labor, and political justice have yielded visible progress while ongoing shortcomings and atrocities remind us how far we have yet to come. Large portions of human life and livelihood have shifted online, but our longing for physical intimacy and connection to the natural world have only grown stronger. 
 
