@@ -46,8 +46,8 @@ hasPdf: "true"
     5. Information about the type of service, such as consumer pick up and delivery, in-home dining, instructional courses, or a combination of processes; and
     6. A list of the areas within the home and/or outdoor areas, such as a porch or backyard with a barbecue, to be covered by the permit.
 5. The REGULATORY AUTHORITY shall issue a permit after an initial inspection has determined that the proposed HOME COOKING OPERATION and its method of operation comply with the requirements of this chapter. 
-    7. The initial inspection may be conducted remotely via videoconference technology.  
-    8. The initial inspection must be conducted during a mutually agreed upon time within one (1) month of receipt of the application, and limited to the areas listed on the permit application.
+    1. The initial inspection may be conducted remotely via videoconference technology.  
+    2. The initial inspection must be conducted during a mutually agreed upon time within one (1) month of receipt of the application, and limited to the areas listed on the permit application.
 6. If the REGULATORY AUTHORITY denies the permit application, the REGULATORY AUTHORITY must provide the applicant with notice of the specific reasons and the opportunity to cure the deficiencies, as well as notice of the applicant’s right to appeal and an explanation of the process and time frames for appeal that are provided in law. 
 7. The REGULATORY AUTHORITY may charge a permit fee not to exceed **[FEE]**, or an amount that does not exceed the reasonable administrative costs of the REGULATORY AUTHORITY in issuing the permit, whichever is less.
 8. The REGULATORY AUTHORITY shall provide the permit holder the opportunity to update the food types, products handled, and service or delivery methods without requiring the permit holder to submit a new permit application.
@@ -162,8 +162,6 @@ A THIRD-PARTY DELIVERY SERVICE that delivers HOME COOKING OPERATION food must:
 
 [^6]: Existing state law provides state and local authorities with enforcement powers, authorizes remedies and penalties for violations of laws within the agencies' jurisdiction (such as administrative orders, court injunctions, and criminal penalties), and sets out the process by which remedies and penalties may be imposed. Those enforcement and penalty provisions likely will apply to Home Cooking Operations unless this statute specifically exempts Home Cooking Operations from the usual enforcement mechanisms.
 
-[^7]: 
-
-		See the Home Cooking Operations Model Code for an example you can adapt for your state.
+[^7]: See the Home Cooking Operations Model Code for an example you can adapt for your state.
 
 [^8]: Change "retail food establishment" as needed, to whatever term is used in the state's law (or a citation) to refer to the regulations applicable to restaurants or retail food stores. In most states, these regulations are based on or incorporate by reference FDA's model Food Code.
