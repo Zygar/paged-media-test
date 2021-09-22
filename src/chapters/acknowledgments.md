@@ -50,6 +50,7 @@ These documents represent the best thinking of many home cooks, lawyers, public 
 
 Special thanks to University of Oregon’s Environmental and Natural Resource Center, Havard’s Food Law & Policy Clinic, the Small Business Association, Airbnb, and Shef for their monetary or in-kind support. 
 
+
 ## Contribute
 
 We hope to release new versions of these model documents periodically as the legislative landscape evolves and we continue to learn from early states’ experiences with implementation. Additional input is welcome and can be shared with us at any time by emailing [advocacy@cookalliance.org](mailto:advocacy@cookalliance.org) with “Model Legislation Feedback” in the subject line.
