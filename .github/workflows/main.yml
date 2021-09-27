@@ -25,6 +25,6 @@ jobs:
 
       - name: Run paged in a container
         id: paged
-        uses: Zygar/pagedjs-cli-github-action@v1.06
+        uses: Zygar/pagedjs-cli-github-action@main
         with:
           target_url: 'http://policy.cookalliance.org/model-code'
