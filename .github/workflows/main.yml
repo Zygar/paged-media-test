@@ -18,15 +18,13 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-        with:
-          node-version: '14'
-      - run: npm install -g pagedjs-cli pagedjs
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: nslookup policy.cookalliance.org
 
-      # Runs a set of commands using the runners shell
-      - name: Run pagedjs-cli
-        run: pagedjs-cli 'http://policy.cookalliance.org/model-legislation'
+      - name: Run paged in a container
+        id: paged
+        uses: Zygar/pagedjs-cli-github-action@v1
+        with:
+          target_url: 'http://policy.cookalliance.org/model-code'
