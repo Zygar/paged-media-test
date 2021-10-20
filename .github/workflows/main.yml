@@ -24,6 +24,7 @@ jobs:
         uses: Zygar/pagedjs-cli-github-action@main
         with:
           target_url: https://policy.cookalliance.org/model-code/
+          additional_script: ${{ github.workspace }}/marginNotesBuild.js
       - name: Save Model Code PDF
         id: model-code-save
         uses: actions/upload-artifact@v2
@@ -37,6 +38,7 @@ jobs:
         uses: Zygar/pagedjs-cli-github-action@main
         with:
           target_url: https://policy.cookalliance.org/model-legislation/
+          additional_script: ${{ github.workspace }}/marginNotesBuild.js
       - name: Save Model Legislation PDF
         id: model-legislation-save
         uses: actions/upload-artifact@v2
@@ -45,6 +47,12 @@ jobs:
           path: ${{ github.workspace }}/output.pdf
       - name: Copy Model Leg to folder
         run: cp -f ${{ github.workspace }}/output.pdf ${{ github.workspace }}/static/model-legislation.pdf
+      - name: Introduction
+        id: introduction
+        uses: Zygar/pagedjs-cli-github-action@main
+        with:
+          target_url: https://policy.cookalliance.org/introduction/
+          additional_script: ${{ github.workspace }}/marginNotesBuild.js
       - name: Save Introduction PDF
         id: introduction-save
         uses: actions/upload-artifact@v2
