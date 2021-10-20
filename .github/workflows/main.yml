@@ -30,6 +30,8 @@ jobs:
         with:
           name: model-code.pdf
           path: ${{ github.workspace }}/output.pdf
+      - name: Copy Model Code to folder
+        run: cp -f ${{ github.workspace }}/output.pdf ${{ github.workspace }}/static/model-code.pdf
       - name: Generate Model Legislation PDF
         id: model-legislation
         uses: Zygar/pagedjs-cli-github-action@main
@@ -42,10 +44,23 @@ jobs:
           name: model-legislation.pdf
           path: ${{ github.workspace }}/output.pdf
       - name: Copy Model Leg to folder
-        run: cp ${{ github.workspace }}/output.pdf ${{ github.workspace }}/static && ls ${{ github.workspace }}/static
+        run: cp -f ${{ github.workspace }}/output.pdf ${{ github.workspace }}/static/model-legislation.pdf
       - name: Save Introduction PDF
         id: introduction-save
         uses: actions/upload-artifact@v2
         with:
           name: introduction.pdf
           path: ${{ github.workspace }}/output.pdf
+      - name: Copy Introduction to folder
+        run: cp -f ${{ github.workspace }}/output.pdf ${{ github.workspace }}/static/introduction.pdf
+      - name: Commit changes to working tree
+        uses: EndBug/add-and-commit@v7 
+        with:
+          author_name: Publisher
+          author_email: hello@andyayrey.com
+          cwd: ${{ github.workspace }}
+          default_author: github_actor
+          message: 'Updates generated PDFs'
+          pathspec_error_handling: ignore
+          pull: 'NO-PULL'
+          push: true
