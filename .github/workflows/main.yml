@@ -19,12 +19,18 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: nslookup policy.cookalliance.org
-
-      - name: Run paged in a container
-        id: paged
+      - name: Generate Model Code PDF
+        id: model-code
         uses: Zygar/pagedjs-cli-github-action@main
         with:
           target_url: https://policy.cookalliance.org/model-code/
+      - name: Generate Model Legislation PDF
+        id: model-legislation
+        uses: Zygar/pagedjs-cli-github-action@main
+        with:
+          target_url: https://policy.cookalliance.org/model-legislation/
+      - name: Generate Model Legislation PDF
+        id: introduction
+        uses: Zygar/pagedjs-cli-github-action@main
+        with:
+          target_url: https://policy.cookalliance.org/introduction/
