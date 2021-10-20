@@ -24,6 +24,12 @@ jobs:
         uses: Zygar/pagedjs-cli-github-action@main
         with:
           target_url: https://policy.cookalliance.org/model-code/
+      - name: Save Model Code PDF
+        id: model-code-save
+        uses: actions/upload-artifact@v2
+        with:
+          name: model-code.pdf
+          path: ${{ github.workspace }}/output.pdf
       - name: Generate Model Legislation PDF
         id: model-legislation
         uses: Zygar/pagedjs-cli-github-action@main
