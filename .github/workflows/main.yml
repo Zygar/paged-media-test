@@ -58,7 +58,6 @@ jobs:
         with:
           author_name: Publisher
           author_email: hello@andyayrey.com
-          cwd: ${{ github.workspace }}
           default_author: github_actor
           message: 'Updates generated PDFs'
           pathspec_error_handling: ignore
