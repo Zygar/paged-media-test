@@ -24,7 +24,7 @@ jobs:
         uses: Zygar/pagedjs-cli-github-action@main
         with:
           target_url: https://policy.cookalliance.org/model-code/
-          additional_script: ${{ github.workspace }}/marginNotesBuild.js
+          additional_script: ./marginNotesBuild.js
       - name: Save Model Code PDF
         id: model-code-save
         uses: actions/upload-artifact@v2
@@ -38,7 +38,7 @@ jobs:
         uses: Zygar/pagedjs-cli-github-action@main
         with:
           target_url: https://policy.cookalliance.org/model-legislation/
-          additional_script: ${{ github.workspace }}/marginNotesBuild.js
+          additional_script: ./marginNotesBuild.js
       - name: Save Model Legislation PDF
         id: model-legislation-save
         uses: actions/upload-artifact@v2
@@ -52,7 +52,7 @@ jobs:
         uses: Zygar/pagedjs-cli-github-action@main
         with:
           target_url: https://policy.cookalliance.org/introduction/
-          additional_script: ${{ github.workspace }}/marginNotesBuild.js
+          additional_script: ./marginNotesBuild.js
       - name: Save Introduction PDF
         id: introduction-save
         uses: actions/upload-artifact@v2
