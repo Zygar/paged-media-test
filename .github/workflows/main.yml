@@ -27,4 +27,4 @@ jobs:
         id: paged
         uses: Zygar/pagedjs-cli-github-action@main
         with:
-          target_url: 'http://policy.cookalliance.org/model-code'
+          target_url: 'https://policy.cookalliance.org/model-code'
