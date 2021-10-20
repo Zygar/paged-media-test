@@ -23,7 +23,7 @@ jobs:
         id: model-code
         uses: Zygar/pagedjs-cli-github-action@main
         with:
-          target_url: https://policy.cookalliance.org/model-code/
+          target_url: https://cookalliancestaging.gtsb.io/model-code/
           additional_script: ./marginNotesBuild.js
       - name: Save Model Code PDF
         id: model-code-save
@@ -37,7 +37,7 @@ jobs:
         id: model-legislation
         uses: Zygar/pagedjs-cli-github-action@main
         with:
-          target_url: https://policy.cookalliance.org/model-legislation/
+          target_url: https://cookalliancestaging.gtsb.io/model-legislation/
           additional_script: ./marginNotesBuild.js
       - name: Save Model Legislation PDF
         id: model-legislation-save
@@ -51,7 +51,7 @@ jobs:
         id: introduction
         uses: Zygar/pagedjs-cli-github-action@main
         with:
-          target_url: https://policy.cookalliance.org/introduction/
+          target_url: https://cookalliancestaging.gtsb.io/introduction/
           additional_script: ./marginNotesBuild.js
       - name: Save Introduction PDF
         id: introduction-save
