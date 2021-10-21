@@ -13,8 +13,6 @@ hasPdf: "true"
 
 ## Definitions
 1. HOME COOKING OPERATION means an enterprise in a private home that is operated by a resident of the private home that stores, handles, prepares, packages, serves, and sells or otherwise provides food to consumers. A HOME COOKING OPERATION does not include a food processing plant, food service establishment, temporary food service establishment, caterer, cottage food operation[^1], educational institution, residential group home facility, assisted living facility, or health care facility. Nothing in this chapter shall prevent the operator of a HOME COOKING OPERATION from separately operating, or applying for a license or permit to operate, another type of food business in accordance with law.[^2]
-
-
 2. ONLINE FOOD MARKETPLACE means an entity that provides a platform on its internet website or mobile application through which a HOME COOKING OPERATION may choose to offer food for sale and from which the ONLINE FOOD MARKETPLACE derives revenues, including, but not limited to, revenues from advertising and fees for services offered to a HOME COOKING OPERATION. Services offered by an ONLINE FOOD MARKETPLACE to a HOME COOKING OPERATION may include, but are not limited to, allowing a HOME COOKING OPERATION to advertise its food for sale and providing a means for potential CONSUMERS to arrange payment for the food, whether the CONSUMER pays directly to the HOME COOKING OPERATION or to the ONLINE FOOD MARKETPLACE. Merely publishing an advertisement for the HOME COOKING OPERATION or food cooked therein does not make the publisher an ONLINE FOOD MARKETPLACE.
 3. READY-TO-EAT FOOD means food that is in a form that is edible and safe to eat without washing, cooking or additional preparation by the consumer and that is reasonably expected to be consumed in the form in which it is provided to the consumer or after reheating by the consumer.
 4. REGULATORY AUTHORITY[^3] means the state or local jurisdiction, such as the county, having jurisdiction over HOME COOKING OPERATIONS.
@@ -34,7 +32,6 @@ hasPdf: "true"
 
 
 ## Permitting
-
 1. No person shall maintain or operate a HOME COOKING OPERATION without a valid permit to operate issued by the REGULATORY AUTHORITY. 
 2. A permit, once issued, shall be nontransferable. A permit shall be valid only for the person or legal entity and location specified by such permit and, unless suspended or revoked for cause, for the time period indicated.
 3. Application for a permit to operate a HOME COOKING OPERATION shall be made upon a form prescribed by the REGULATORY AUTHORITY. The REGULATORY AUTHORITY may require a permit holder to renew the permit periodically, but not more frequently than annually.
@@ -95,8 +92,6 @@ An ONLINE FOOD MARKETPLACE that lists or promotes a HOME COOKING OPERATION on it
 ## THIRD-PARTY DELIVERY SERVICE
 
 A THIRD-PARTY DELIVERY SERVICE that delivers HOME COOKING OPERATION food must:
-
-
 
 1. Clearly and conspicuously post on its internet website or mobile application the fees associated with using its delivery service in a manner that allows both the consumer and the HOME COOKING OPERATION to see and understand the amount being charged for the services provided by the THIRD-PARTY DELIVERY SERVICE delivering HOME COOKING OPERATION food. 
 2. Notify HOME COOKING OPERATIONS of any changes to these fees exceeding a 2-percent increase in writing and no later than one month before the changes take effect. 
