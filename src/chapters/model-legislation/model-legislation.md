@@ -116,24 +116,8 @@ A THIRD-PARTY DELIVERY SERVICE that delivers HOME COOKING OPERATION food must:
     6. The HOME COOKING OPERATION has failed to comply with any of the provisions of this chapter or rules and regulations promulgated pursuant thereto.
 4. Notwithstanding any other provision of law to the contrary and except in circumstances posing an imminent, serious risk to public health, the REGULATORY AUTHORITY shall issue a warning letter or notice of violation to any person it finds to be in violation of this chapter or the regulations adopted pursuant to this chapter, and provide the alleged violator a reasonable opportunity to cure the violation, before the REGULATORY AUTHORITY seeks an administrative remedy or penalty. Agency and local authority enforcement powers shall be limited to investigations, inspections, warnings, and restrictions, suspensions or revocations of a permit.[^6]
 
-## Test Section
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a faucibus metus. Morbi fermentum turpis ac sem porttitor ornare. Ut est mi, dictum et ultricies vel, accumsan id elit. 
-
-1. Proin tempus, sapien vehicula commodo egestas, nisi eros tincidunt ante, rutrum facilisis leo augue et risus. Quisque eros risus, lobortis ac vulputate sagittis, varius quis dolor. 
-2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a faucibus metus. Morbi fermentum turpis ac sem porttitor ornare. Ut est mi, dictum et ultricies vel, accumsan id elit. 
-    1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a faucibus metus. Morbi fermentum turpis ac sem porttitor ornare. Ut est mi, dictum et ultricies vel, accumsan id elit. 
-    2. Proin tempus, sapien vehicula commodo egestas, nisi eros tincidunt ante, rutrum facilisis leo augue et risus. Quisque eros risus, lobortis ac vulputate sagittis, varius quis dolor. 
-3. Praesent pellentesque lorem at eros congue, quis rhoncus ante congue. Donec dictum nisi non orci volutpat porttitor. Aliquam pharetra, purus quis ullamcorper dictum, velit libero euismod velit, consequat aliquam arcu nunc consectetur orci. Integer porttitor lorem sit amet mauris pellentesque, elementum porttitor metus luctus.
-    1. Ut a faucibus metus. Morbi fermentum turpis ac sem porttitor ornare. Ut est mi, dictum et ultricies vel, accumsan id elit. [^7]
-    2. Proin tempus, sapien vehicula commodo egestas, nisi eros tincidunt ante, rutrum facilisis leo augue et risus. Quisque eros risus, lobortis ac vulputate sagittis, varius quis dolor. 
-4. That’s it!
-
 
 ## Regulations
-
-
-
 1. By no later than **[[DATE]]**, the STATE AGENCY shall promulgate rules and regulations to implement this chapter.  Such rules and regulations may include provisions relating to permitting of HOME COOKING OPERATIONS, hygiene, sanitation, approved sources of food, training and recordkeeping.[^8]
 
 2. The regulations promulgated pursuant to subdivision one of this section shall include requirements for sanitation in HOME COOKING OPERATIONS that shall:
@@ -179,9 +163,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a faucibus metus. Mo
 
 [^6]: Existing state law provides state and local authorities with enforcement powers, authorizes remedies and penalties for violations of laws within the agencies' jurisdiction (such as administrative orders, court injunctions, and criminal penalties), and sets out the process by which remedies and penalties may be imposed. Those enforcement and penalty provisions likely will apply to Home Cooking Operations unless this statute specifically exempts Home Cooking Operations from the usual enforcement mechanisms.
 
-[^7]: This is an example footnote that will appear in the margins on the website. 
+[^7]: See the Home Cooking Operations Model Code for an example you can adapt for your state.
 
-[^8]: See the Home Cooking Operations Model Code for an example you can adapt for your state.
-
-[^9]: Change "retail food establishment," as needed, to whatever term is used in the state's law (or a citation) to refer to the regulations applicable to restaurants or retail food stores. In most states, these regulations are based on or incorporate by reference FDA's model Food Code.
+[^8]: Change "retail food establishment," as needed, to whatever term is used in the state's law (or a citation) to refer to the regulations applicable to restaurants or retail food stores. In most states, these regulations are based on or incorporate by reference FDA's model Food Code.
 
