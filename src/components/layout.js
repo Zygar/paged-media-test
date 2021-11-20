@@ -7,6 +7,7 @@ import { Logo } from "./logo"
 import Box from "./Box"
 import SEO from "./seo"
 import { bp } from "../utils/breakpoints"
+import "../pages/print.css"
 
 const Container = styled.div`
   margin: 0 auto;

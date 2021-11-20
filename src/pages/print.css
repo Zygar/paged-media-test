@@ -80,6 +80,11 @@ ol {
     counter-reset: subSubSubClause;
 }
 
+li>p {
+    display: inline;
+    /*Fixes an issue with whitespace in Markdown */
+}
+
 li::before {
     /* color: white; */
     font-weight: bold;
