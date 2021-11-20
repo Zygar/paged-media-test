@@ -225,11 +225,14 @@ export default function Layout(props) {
                     <p><a href="https://www.cookalliance.org/">The COOK Alliance</a> is a nonprofit whose mission is to establish just &amp; people-powered food systems. We believe that legalizing home restaurants in the United States creates more economic access for cooks, healthy food options for customers, and cultural exchange for communities. </p>
                     <p>As the primary sponsor behind the first home restaurants bills in the US, we are now working to ensure equitable, accessible implementation in early adopting states and to extend the same opportunity to more home cooks across the nation. We are also increasingly active in supporting new Cottage Food policies and other local food movement initiatives. </p>
                     <p>We can be reached for technical assistance, partnership, or philanthropic inquiries at <a href="mailto:hello@cookalliance.org">hello@cookalliance.org</a> </p>
+                    <p>Website, downloadable legislation and publishing system built by <a href="https://andyayrey.com/">Andy Ayrey</a></p>
                 </div>
                 <div>
                     <h4>License &amp; Feedback</h4>
                     <p>These documents are offered under <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International license</a> so that they can be used and edited by advocates and legislators.</p>
                     <p>We hope to release new versions of these model documents periodically as the legislative landscape evolves and we continue to learn from early states’ experiences with implementation. Additional input is welcome and can be shared with us at any time by emailing <a href="mailto:advocacy@cookalliance.org">advocacy@cookalliance.org</a> with “Model Legislation Feedback” in the subject line. </p>
+
+
                 </div>
             </Box>
             </Footer>
