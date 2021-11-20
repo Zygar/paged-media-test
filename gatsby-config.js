@@ -57,7 +57,17 @@ module.exports = {
         options: {
             pathToConfigModule: `src/utils/typography`
         }
-    }, `gatsby-plugin-image`,
+    },
+    {
+        resolve: "gatsby-plugin-google-tagmanager",
+        options: {
+            id: "GTM-WR72ZBJ",
+            // Defaults to false
+            enableWebVitalsTracking: true
+
+        },
+    },
+        `gatsby-plugin-image`,
         `gatsby-plugin-sharp`,
         `gatsby-transformer-sharp`,
         `gatsby-plugin-react-helmet`
