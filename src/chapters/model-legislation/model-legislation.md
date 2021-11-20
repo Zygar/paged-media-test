@@ -32,7 +32,6 @@ hasPdf: "true"
 5. Any person who works with unpackaged food, food equipment or utensils, or food contact surfaces in the HOME COOKING OPERATION, and any person who supervises such persons, shall be a certified food handler or food protection manager who has shown proficiency 
 6. A HOME COOKING OPERATION shall comply with regulations adopted by the STATE AGENCY under this chapter.
 
-
 ## Permitting
 
 1. No person shall maintain or operate a HOME COOKING OPERATION without a valid permit to operate issued by the REGULATORY AUTHORITY. 
@@ -54,7 +53,6 @@ hasPdf: "true"
 9. The permit, or an accurate copy thereof, shall be retained by the permit holder onsite and made available upon request to a representative of the department.
 10. Within six months after this law takes effect, the STATE AGENCY and local REGULATORY AUTHORITIES shall post on their internet websites the requirements for the permitting of a HOME COOKING OPERATION, pursuant to this chapter, which shall be written at a high school level in English and in any other languages, as appropriate for the jurisdiction.
 
-
 ## Labeling
 
 1. At a minimum, a HOME COOKING OPERATION shall clearly and conspicuously place on the label of any food it produces and sells in a container, on a sign or menu at the point of sale if the food is not sold in a container, and on any webpage or mobile application where the food can be ordered the following information:
@@ -69,7 +67,6 @@ hasPdf: "true"
     6. The following statement printed in at least the equivalent of 11-point font size in a color that provides a clear contrast to the background: “Made in a HOME COOKING OPERATION. This product may contain allergens.”
 2. No labeling, advertising or marketing of a HOME COOKING OPERATION’s food shall include a “nutrient content claim” as defined in 21 CFR 101.13(b), or a “health claim” as defined in 21 CFR 101.14(a)(1).
 3. All required information appearing in a foreign language on a menu, label, or in advertising or marketing must also be provided in English. Numeric characters that are identical in both languages do not have to be repeated.
-
 
 ## ONLINE FOOD MARKETPLACE
 
